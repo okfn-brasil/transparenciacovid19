@@ -141,6 +141,16 @@ header .navbar-default .navbar-nav li a {
   letter-spacing: 3px;
   color: #79db59;
 }
+#slider-cta {
+  background-size: cover;
+  position: relative;
+}
+#slider-cta img{
+  height: auto;
+  width: 100%;  
+}
+
+
 /*--
 	wrapper Start
 --*/
@@ -826,7 +836,10 @@ footer p {
   color: #919191;
 }
 footer a {
-  color: #595959;
+  color: #100f19;
+}
+footer a:hover {
+  color: #d01c8c;
 }
 footer .footer-manu {
   padding-bottom: 25px;
@@ -845,4 +858,14 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+footer .img-creative-commons {
+  max-width: 10%;
+}
+footer i{
+  font-size: 50px;
+  padding: 0 10px 0 10px;
+}
+footer .social-media{
+  margin-bottom: 20px;
 }
