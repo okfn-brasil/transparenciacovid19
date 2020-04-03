@@ -176,8 +176,7 @@ px      68    160    252    */
     margin-bottom: 20px;
   }
   #slider {
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding: 0;
   }
   #slider .block {
     padding-left: 0px;
@@ -398,3 +397,22 @@ px      68    160    252    344    436    */
 	Overrides styles for devices with a 
 	device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
+@media (max-width: 768px)  {
+  .btn-call-to-action {
+    padding: 2vh 2vh;
+    font-size: 3vh;    
+  }
+  .img-creative-commons{
+    margin-top: 5vh;
+    max-width: 15vh;
+  }
+  footer .license {
+    padding: 0;
+  }
+  #materiais h4 {
+    padding: 20px 0 20px 0;
+    margin: 0 15vh 5vh 15vh;
+    color:#fff; 
+    background-color: #100f19; 
+  }
+ }

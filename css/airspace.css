@@ -73,8 +73,7 @@ header .navbar {
   border: 0px;
 }
 header .navbar-brand {
-  padding-top: 5px;
-  width: 20%;
+    margin-bottom: 15px;
 }
 header .navbar-default {
   background: none;
@@ -141,11 +140,11 @@ header .navbar-default .navbar-nav li a {
   letter-spacing: 3px;
   color: #79db59;
 }
-#slider-cta {
+#apoio {
   background-size: cover;
   position: relative;
 }
-#slider-cta img{
+#apoio img{
   height: auto;
   width: 100%;  
 }
@@ -154,35 +153,35 @@ header .navbar-default .navbar-nav li a {
 /*--
 	wrapper Start
 --*/
-#intro {
+#indice {
   padding: 50px 0;  
 }
-#intro .block h2 {
+#indice .block h2 {
   padding-top: 35px;
   line-height: 27px;
   margin: 0;
 }
-#intro .block p {
+#indice .block p {
   color: #7B7B7B;
   padding-top: 20px;
 }
-#intro .block img {
+#indice .block img {
   padding-left: 40px;
   width: 100%;
 }
-#intro .section-title {
+#indice .section-title {
   margin-bottom: 0px;
 }
-#intro .section-title p {
+#indice .section-title p {
   padding-top: 20px;
 }
-#intro .row{
+#indice .row{
   margin-right: -15px;
   margin-left: -15px;
   display: flex;
   justify-content: space-between;
 }
-#intro  h4{
+#indice  h4{
   padding: 20px;
   margin: 10px;
   color:#fff; 
@@ -191,36 +190,33 @@ header .navbar-default .navbar-nav li a {
 /*--
 	service Start
 --*/
-#service {
+#materiais {
   text-align: center;
   padding: 90px 0;
   background-color: #9b9ba9;
 }
-#service .service-item {
+#materiais .materiais-item {
   padding-bottom: 30px;  
 }
-#service .service-item i {
+#materiais .materiais-item i {
   font-size: 150px;
   color: #4A4656;
 }
-#service .service-item h4 {
+#materiais .materiais-item h4 {
   padding: 20px 0 20px 0;
   margin: 0;
   color:#fff;  
 }
-#service h4 {
+#materiais h4 {
   padding: 20px 0 20px 0;
   margin: 5px;
   color:#fff; 
   background-color: #100f19; 
 }
-#service h4:hover {
-  padding: 20px 0 20px 0;
-  margin: 5px;
-  color:#fff; 
+#materiais h4:hover {
   background-color: #d01c8c; 
 }
-#service .service-item p {
+#materiais .materiais-item p {
   color: #888;
   padding-top: 10px;
   margin: 0;
@@ -860,7 +856,11 @@ footer .footer-manu ul li a:hover {
   color: #000;
 }
 footer .img-creative-commons {
-  max-width: 10%;
+  margin-top: 3vh;
+  width: 20vh;
+}
+footer .license {
+  padding: 0 200px;
 }
 footer i{
   font-size: 50px;
@@ -869,3 +869,14 @@ footer i{
 footer .social-media{
   margin-bottom: 20px;
 }
+
+
+/*--- Responsividade ---*/
+/* tables em formato porta retrato até os desktops no formato paisagem */
+
+ 
+/* dispositivo em paisagem até os tablets em formato porta-retrato */
+@media (max-width: 767px) { }
+ 
+/* dispositivo no formato paisagem e abaixos */
+@media (max-width: 480px) {  }
