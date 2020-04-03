@@ -98,11 +98,11 @@ header .navbar-default .navbar-nav li a {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/header.png");
+  /* background: url("../img/header.png"); */
   background-size: cover;
   /* background-attachment: fixed; */
-  background-position: 10% 0%;
-  padding: 254px 0 183px 0;
+  /* background-position: 10% 0%; */
+  /* padding: 270px 0 190px 0; */
   position: relative;
 }
 /* #slider:before {
@@ -206,13 +206,13 @@ header .navbar-default .navbar-nav li a {
 	call-to-action Start
 --*/
 #call-to-action {
-  background: #49d4b7;
+  background: url("../img/projeto-transparencia-covid-ajuda.png") no-repeat;
   background-size: cover;
   /* background-attachment: fixed; */
-  padding: 70px 0px;
+  padding: 280px 0px;
   position: relative;
   text-align: center;
-  color: #fff;
+  
 }
 /* #call-to-action:before {
   content: "";
@@ -237,12 +237,12 @@ header .navbar-default .navbar-nav li a {
   line-height: 1.6;
 }
 #call-to-action .btn-call-to-action {
-  padding: 15px 35px;
+  padding: 35px 55px;
   border: none;
   background-color: #d01c8c;
-  font-size: 30px;
+  font-size: 50px;
   color: #fff;
-  margin-top: 30px;
+  margin-bottom: 0;
 }
 /*--
 	Feature Start
