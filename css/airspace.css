@@ -73,7 +73,7 @@ header .navbar {
   border: 0px;
 }
 header .navbar-brand {
-    margin-bottom: 15px;
+  padding-top: 5px;  
 }
 header .navbar-default {
   background: none;
@@ -84,11 +84,11 @@ header .navbar-default .navbar-nav {
 }
 header .navbar-default .navbar-nav li a {
   color: #fff;
-  /* padding: 10px 26px; */
+  padding: 10px 26px;
   font-size: 15px;
 }
-.navbar-default .navbar-nav > li > a:hover{
-  color: #d01c8c;
+header .navbar-default .navbar-nav li a:hover {
+  color: #d01c8c; 
 }
 /*---------------------------------------------
 					Index Start
