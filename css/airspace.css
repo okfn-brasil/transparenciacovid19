@@ -91,6 +91,10 @@ header .navbar-default .navbar-nav li a:hover {
   color: #d01c8c; 
 }
 
+/*---------------------------------------------
+					Responsividade logo OKBR
+-----------------------------------------------*/
+
 @media only screen and (min-width: 768px) {
   header .navbar-sm {
     display: none;
@@ -153,6 +157,26 @@ header .navbar-default .navbar-nav li a:hover {
   letter-spacing: 3px;
   color: #79db59;
 }
+
+/*---------------------------------------------
+					Responsividade Header Transparência COVID-19
+-----------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  .slider-sm img{
+    display: none;    
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider-md img{
+    display: none;    
+  }
+}
+
+
+
+
 #apoio {
   background-size: cover;
   position: relative;
@@ -168,11 +192,6 @@ header .navbar-default .navbar-nav li a:hover {
 --*/
 #indice {
   padding: 50px 0;  
-}
-@media only screen and (max-width: 600px) {
-  #indice {
-    padding: 0;  
-  }
 }
 #indice .block h2 {
   padding-top: 35px;
