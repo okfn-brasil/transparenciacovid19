@@ -80,7 +80,7 @@ header .navbar-default {
   border: 0px;
 }
 header .navbar-default .navbar-nav {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 header .navbar-default .navbar-nav li a {
   color: #fff;
@@ -90,6 +90,19 @@ header .navbar-default .navbar-nav li a {
 header .navbar-default .navbar-nav li a:hover {
   color: #d01c8c; 
 }
+
+@media only screen and (min-width: 768px) {
+  header .navbar-sm {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header .navbar-md {
+    display: none;
+  }
+}
+
 /*---------------------------------------------
 					Index Start
 -----------------------------------------------*/
