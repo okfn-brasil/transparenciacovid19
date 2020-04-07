@@ -8,6 +8,7 @@
 
 /* @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600); */
 @import url(//fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap);
+@import url(//fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,700&display=swap);
 /* @import url(//fonts.googleapis.com/css?family=Volkhov:400italic); */
 /* var text-decoration */
 /*--
@@ -175,51 +176,88 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 
-
-
 #apoio {
-  background-size: cover;
+  padding: 50px 0;
   position: relative;
+  background-color: #31caad;
 }
-#apoio img{
+
+/* #apoio img{
   height: auto;
   width: 100%;  
+} */
+
+#apoio h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 25px 45px;  
+  color: #fff;
+  background-color: #31caad;
+  font-size: 60px;   
+  text-align: center;  
+}
+
+#apoio h4{
+  font-family: 'Merriweather Sans', sans-serif;
+  padding: 25px 10px;  
+  color: #31caad;
+  background-color: #fff;
+  font-size: 30px;   
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  width: 520px;  
+}
+@media only screen and (max-width: 767px) {
+  #apoio {
+    padding: 25px 0;
+
+  }
+  #apoio h2 {    
+    padding: 10px 10px;  
+    font-size: 30px; 
+  }
+  #apoio h4{
+    padding: 10px 10px;  
+    font-size: 15px;   
+    margin-bottom: 5px;
+    width: 300px;  
+  }
 }
 
 
 /*--
 	wrapper Start
 --*/
-#indice {
+#ranking {
   padding: 50px 0;  
 }
-#indice .block h2 {
+#ranking .block h2 {
   padding-top: 35px;
   line-height: 27px;
   margin: 0;
 }
-#indice .block p {
+#ranking .block p {
   color: #7B7B7B;
   padding-top: 20px;
 }
-#indice .block img {
+#ranking .block img {
   padding-left: 40px;
   width: 100%;  
 }
-#indice .section-title {
+#ranking .section-title {
   margin-bottom: 0px;
 }
-#indice .section-title p {
+#ranking .section-title p {
   padding-top: 20px;
 }
-#indice .row{
+#ranking .row{
   margin-right: -15px;
   margin-left: -15px;
   margin-top: 50px;
   /* display: flex;
   justify-content: space-between; */
 }
-#indice  h4{
+#ranking  h4{
   margin: auto;
   margin-bottom: 10px;
   width: 35%;  
@@ -229,13 +267,13 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-  #indice  h4 {
+  #ranking  h4 {
     width: 60%;
   }
 }
 
-#indice .mapa-iframe {
-  margin-top: 10%;
+#ranking .mapa-iframe {
+  margin-top: 20%;
 }
 /*--
 	service Start
