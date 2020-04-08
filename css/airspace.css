@@ -320,8 +320,7 @@ header .navbar-default .navbar-nav li a:hover {
   padding: 15px 10px;
   margin: 5px;
   color: #fff;
-  background-color: #100f19;
-  border: 1px solid #fff;
+  background-color: #100f19;  
   border-radius: 10px;
 }
 #materiais h4:hover {
