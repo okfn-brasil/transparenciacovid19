@@ -182,7 +182,7 @@ header .navbar-default .navbar-nav li a:hover {
 
 
 #apoio {
-  padding: 50px 0;
+  padding: 100px 0;
   position: relative;
   background-color: #31caad;
 }
@@ -215,7 +215,7 @@ header .navbar-default .navbar-nav li a:hover {
 
 @media only screen and (max-width: 767px) {
   #apoio {
-    padding: 25px 0;
+    padding: 40px 0;
 
   }
 
@@ -280,6 +280,9 @@ header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   background-color: #7ccdaf;
 }
+#ranking .mapa-iframe {
+  margin-top: 20%;  
+}
 
 @media only screen and (max-width: 767px) {
   #ranking{
@@ -288,11 +291,11 @@ header .navbar-default .navbar-nav li a:hover {
   #ranking h4 {
     width: 60%;
   }
+  #ranking .mapa-iframe {
+    margin-top: 10%;    
+  }
 }
 
-#ranking .mapa-iframe {
-  margin-top: 20%;
-}
 
 /*--
 	service Start
