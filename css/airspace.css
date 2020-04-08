@@ -280,19 +280,22 @@ header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   background-color: #7ccdaf;
 }
+
 #ranking .mapa-iframe {
-  margin-top: 20%;  
+  margin-top: 20%;
 }
 
 @media only screen and (max-width: 767px) {
-  #ranking{
+  #ranking {
     padding: 20px 0;
   }
+
   #ranking h4 {
     width: 60%;
   }
+
   #ranking .mapa-iframe {
-    margin-top: 10%;    
+    margin-top: 10%;
   }
 }
 
@@ -309,26 +312,31 @@ header .navbar-default .navbar-nav li a:hover {
 #materiais .materiais-item {
   padding-bottom: 30px;
 }
+
 #materiais .materiais-item i {
   font-size: 150px;
   color: #4A4656;
 }
+
 #materiais .materiais-item h4 {
   padding: 15px 0 15px 0;
   margin: 0;
   color: #fff;
 }
+
 #materiais h4 {
   font-size: 22px;
   padding: 15px 10px;
   margin: 5px;
   color: #fff;
-  background-color: #100f19;  
+  background-color: #100f19;
   border-radius: 10px;
 }
+
 #materiais h4:hover {
   background-color: #d01c8c;
 }
+
 #materiais .materiais-item p {
   color: #888;
   padding-top: 10px;
@@ -1023,11 +1031,15 @@ footer {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  /* position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; */
 }
 
 footer p {
-  font-size: 10px; 
-  line-height: 15px; 
+  font-size: 10px;
+  line-height: 15px;
   color: #5C5C5C;
 }
 
@@ -1081,19 +1093,20 @@ footer .social-media-title {
   margin-bottom: 20px;
 }
 
-footer img{
- max-width: 40%;
+footer img {
+  max-width: 40%;
 }
 
-footer h4{
+footer h4 {
   font-size: 15px;
 }
 
 @media only screen and (max-width: 992px) {
   footer .license {
-    margin-top: 20px;   
-    padding: 0 100px; 
+    margin-top: 20px;
+    padding: 0 100px;
   }
+
   footer p {
     padding: 0 100px;
   }
