@@ -311,7 +311,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 #materiais .materiais-item {
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
 #materiais .materiais-item i {
@@ -326,7 +326,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 #materiais h4 {
-  font-size: 22px;
+  font-size: 20px;
   padding: 15px 10px;
   margin: 5px;
   color: #fff;
@@ -337,6 +337,15 @@ header .navbar-default .navbar-nav li a:hover {
 #materiais h4:hover {
   background-color: #d01c8c;
 }
+
+#materiais .breve{
+  background-color: #a3a2a5;
+}
+
+#materiais .breve:hover{
+  background-color: #a3a2a5;
+}
+
 
 #materiais .materiais-item p {
   color: #888;
