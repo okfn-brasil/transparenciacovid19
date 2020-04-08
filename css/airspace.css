@@ -1103,4 +1103,10 @@ footer h4{
   footer p {
     padding: 0 40px;
   }
+
+.navbar-navigation {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
 }
