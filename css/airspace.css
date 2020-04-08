@@ -57,6 +57,19 @@ a:active {
   text-decoration: none !important;
 }
 
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.center-text {
+  text-align: center;
+}
+
 .section-title {
   margin-bottom: 70px;
 }
@@ -326,7 +339,7 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 #materiais h4 {
-  font-size: 20px;
+  font-size: 18px;
   padding: 15px 10px;
   margin: 5px;
   color: #fff;
@@ -345,7 +358,6 @@ header .navbar-default .navbar-nav li a:hover {
 #materiais .breve:hover{
   background-color: #a3a2a5;
 }
-
 
 #materiais .materiais-item p {
   color: #888;
@@ -409,51 +421,6 @@ header .navbar-default .navbar-nav li a:hover {
   -ms-transform: translate(-50%, -50%);
 }
 
-/*--
-	Feature Start
---*/
-#feature {
-  background: url("../img/featue-bg.jpg");
-  background-position: 50% 94px;
-  width: 100%;
-  display: block;
-  position: relative;
-  overflow: visible;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #fff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  padding: 100px 0;
-}
-
-#feature h2 {
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-#feature p {
-  color: #8d8f92;
-  margin-bottom: 20px;
-}
-
-#feature .btn-view-works {
-  background: #655E7A;
-  color: #fff;
-  padding: 10px 20px;
-}
-
-
-
 /*---------------------------------------------
 					FIM DA HOME
 -----------------------------------------------*/
@@ -493,6 +460,32 @@ header .navbar-default .navbar-nav li a:hover {
 }
 
 
+/*---------------------------------------------
+					SOBRE
+-----------------------------------------------*/
+
+
+.post-area {
+ padding: 40px;
+ width: 100%;
+ min-height: 150px;
+ background-color: white;
+ border-bottom: 1px dotted #ddd;
+}
+ 
+
+.post-area a{
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.post-area a:link, .post-area a:visited {
+ font-size: 30px;
+ color: #333;
+}
+
+.post-area a:hover {
+ color: #d01c8c;
+} 
 
 
 
