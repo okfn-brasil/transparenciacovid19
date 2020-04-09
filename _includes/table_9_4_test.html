@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<style>
+.covid_header, .covid_alto,.covid_bom, .covid_medio, .covid_baixo, .covid_opaco{border:solid #ffffff 0.1px;border-radius: 1px;vertical-align:middle;padding:1px 5px;line-height:1.5;text-align:center;margin:0.5pt;font-family:Verdana; font-size:11pt;}
+.covid_header:hover, .covid_alto:hover,.covid_bom:hover, .covid_medio:hover, .covid_baixo:hover, .covid_opaco:hover{box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);}
+.covid_header{background-image:linear-gradient(rgba(40,40,40,1),rgba(40,40,40,0.8));}/*#666666*/
+.covid_textoclaro{color:#ffffff;}
+.covid_textoescuro{color:#666666;}
+.covid_alto{background-image:linear-gradient(rgba(72,172,38,0.8),rgba(72,172,38,1));}/*#4dac26;*/
+.covid_bom{background-image:linear-gradient(rgba(184,225,134,0.7),rgba(184,225,134,1));}/*b8e186*/
+.covid_medio{background-image:linear-gradient(rgba(247,247,247,0.6),rgba(247,247,247,1));}/*f7f7f7*/
+.covid_baixo{background-image:linear-gradient(rgba(241,182,218,0.6),rgba(241,182,218,0.8));}/*f1b6da*/
+.covid_opaco{background-image:linear-gradient(rgba(208,28,139,0.8),rgba(208,28,139,1));}/*d01c8b*/
+</style>
+<body>
+<div>
+<table >
+    <colgroup>
+        <col width="11%">
+        <col width="36%">
+        <col width="11%">
+        <col width="11%">
+        <col width="11%">
+
+    </colgroup>
+    <tbody>
+        <tr>
+            <td class="covid_header">
+            <p class="covid_textoclaro">Posição</p>
+            </td>
+            <td class="covid_header">
+            <p class="covid_textoclaro">Estado</p>
+            </td >
+            <td class="covid_header">
+            <p class="covid_textoclaro">Pont.</p>
+            </td>
+            <td class="covid_header">
+            <p class="covid_textoclaro">Variação</p>
+            </td>
+            <td class="covid_header">
+            <p class="covid_textoclaro">Nível</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="covid_alto">
+            <p class="covid_textoclaro">1</p>
+            </td>
+            <td class="covid_alto">
+            <p class="covid_textoclaro">Pernambuco (PE)</p>
+            </td>
+            <td class="covid_alto">
+            <p class="covid_textoclaro">81</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+            <td class="covid_alto">
+            <p class="covid_textoclaro">Alto</p>
+            </td>
+        </tr>
+        <tr >
+            <td class="covid_bom">
+            <p class="covid_textoescuro">2</p>
+            </td>
+            <td class="covid_bom">
+            <p class="covid_textoescuro">Ceará (CE)</p>
+            </td>
+            <td class="covid_bom">
+            <p class="covid_textoescuro">69</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+            <td rowspan="2" class="covid_bom">
+            <p class="covid_textoescuro">Bom</p>
+            </td>
+        </tr>
+        <tr >
+            <td class="covid_bom">
+            <p class="covid_textoescuro">3</p>
+            </td>
+            <td class="covid_bom">
+            <p class="covid_textoescuro">Rio de Janeiro (RJ)</p>
+            </td>
+            <td class="covid_bom">
+            <p class="covid_textoescuro">64</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_medio">
+            <p class="covid_textoescuro">4</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">Tocantins (TO)</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">50</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+            <td rowspan="5" class="covid_medio">
+            <p class="covid_textoescuro">Médio</p>
+            </td>
+        </tr>
+        <tr >
+            <td class="covid_medio">
+            <p class="covid_textoescuro">5</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">Minas Gerais (MG)</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">48</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_medio">
+            <p class="covid_textoescuro">6</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">Maranhão (MA)</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">45</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_medio"></td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">Mato Grosso do Sul (MS)</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">45</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_medio">
+            <p class="covid_textoescuro">7</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">Roraima (RR)</p>
+            </td>
+            <td class="covid_medio">
+            <p class="covid_textoescuro">40</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">8</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Rio Grande do Sul (RS)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">36</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+            <td rowspan="12" class="covid_baixo">
+            <p class="covid_textoescuro">Baixo</p>
+            </td>
+        </tr>
+        <tr >
+            <td class="covid_baixo"></td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro"><em>Governo Federal*</em></p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">36</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">9</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Alagoas (AL)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">33</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo"></td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Bahia (BA)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">33</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">10</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Mato Grosso (MT)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">31</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo"></td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">São Paulo (SP)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">31</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">11</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Rio Grande do Norte (RN)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">29</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">12</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Distrito Federal (DF)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">21</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo"></td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Piauí (PI)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">21</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">13</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Amazonas (AM)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">17</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">14</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Acre (AC)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">14</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_baixo"></td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">Goiás (GO)</p>
+            </td>
+            <td class="covid_baixo">
+            <p class="covid_textoescuro">14</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">15</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Amapá (AP)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">10</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+            <td rowspan="8" class="covid_opaco">
+            <p class="covid_textoclaro">Opaco</p>
+            </td>
+        </tr>
+        <tr >
+            <td class="covid_opaco"></td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Espírito Santo (ES)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">10</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_opaco"></td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Paraíba (PB)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">10</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_opaco"></td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Paraná (PR)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">10</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_opaco"></td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Santa Catarina (SC)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">10</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_opaco"></td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Sergipe (SE)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">10</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">16</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Pará (PA)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">0</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+        <tr >
+            <td class="covid_opaco"></td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">Rondônia (RO)</p>
+            </td>
+            <td class="covid_opaco">
+            <p class="covid_textoclaro">0</p>
+            </td>
+            <td class="covid_ncorrige">
+            <p class="covid_textocorrige">varcorrege</p>
+            </td>            
+        </tr>
+    </tbody>
+</table>
+</div>

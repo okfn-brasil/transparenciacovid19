@@ -444,28 +444,46 @@ header .navbar-default .navbar-nav li a:hover {
 -----------------------------------------------*/
 
 .post-content{  
-  padding-bottom: 60px; 
-  margin-top: 40px; 
+  padding-bottom: 60px;   
+  margin: 40px;
 }
 
-.post-content .block{
+/* .post-content .block{
   margin-right: 40px;
-}
+} */
 
 .post-content h1, h2{
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 700;
 }
-
 .post-content p{
   font-size: 18px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;  
   text-align: justify;
 }
-
 .post-email{
   font-weight: bold;
 }
+
+
+@media only screen and (min-width: 992px) {
+  .post-content .block{
+    margin-right: 80px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .post-content{
+    margin: 30px 15px;
+  }
+  .post-content h1{
+    font-size: 30px;
+  }
+  .post-content p{    
+    text-align: left;
+  }
+}
+
 
 
 /*---------------------------------------------
@@ -481,13 +499,12 @@ header .navbar-default .navbar-nav li a:hover {
  border-bottom: 1px dotted #ddd;
 }
  
-
 .post-area a{
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 30px;
 }
 
-.post-area a:link, .post-area a:visited {
- font-size: 30px;
+.post-area a:link, .post-area a:visited { 
  color: #333;
 }
 
@@ -495,7 +512,14 @@ header .navbar-default .navbar-nav li a:hover {
  color: #d01c8c;
 } 
 
-
+@media only screen and (max-width: 767px) {
+  .post-area{
+    padding: 20px 0px;
+  }
+  .post-area a{
+    font-size: 25px;
+  }
+}
 
 
 
