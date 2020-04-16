@@ -295,8 +295,12 @@ header .navbar-default .navbar-nav li a:hover {
   background-color: #7ccdaf;
 }
 
-#ranking .mapa-iframe {
+/* #ranking .mapa-iframe {
   margin-top: 25%;
+} */
+
+#datawrapper-chart-emKp4 {
+  padding-top: 30px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -311,6 +315,12 @@ header .navbar-default .navbar-nav li a:hover {
   #ranking .mapa-iframe {
     margin-top: 10%;
   }
+
+  #datawrapper-chart-emKp4 {
+    padding-top: 10px;
+  }
+  
+
 }
 
 table p{
