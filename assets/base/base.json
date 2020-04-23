@@ -1,0 +1,362 @@
+{
+   "1":{
+      "dia":3,
+      "mes":4,
+      "ano":2020,
+      "periodo":"02abr - 09abr",
+      "estados":{
+         "ac": {
+            "pontuacao": 14,
+            "variacao": 0
+          },
+          "al": {
+            "pontuacao": 33,
+            "variacao": 0
+          },
+          "am": {
+            "pontuacao": 17,
+            "variacao": 0
+          },
+          "ap": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "ba": {
+            "pontuacao": 33,
+            "variacao": 0
+          },
+          "br": {
+            "pontuacao": 36,
+            "variacao": 0
+          },
+          "ce": {
+            "pontuacao": 69,
+            "variacao": 0
+          },
+          "df": {
+            "pontuacao": 21,
+            "variacao": 0
+          },
+          "es": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "go": {
+            "pontuacao": 14,
+            "variacao": 0
+          },
+          "ma": {
+            "pontuacao": 45,
+            "variacao": 0
+          },
+          "mg": {
+            "pontuacao": 48,
+            "variacao": 0
+          },
+          "ms": {
+            "pontuacao": 45,
+            "variacao": 0
+          },
+          "mt": {
+            "pontuacao": 31,
+            "variacao": 0
+          },
+          "pa": {
+            "pontuacao": 0,
+            "variacao": 0
+          },
+          "pb": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "pe": {
+            "pontuacao": 81,
+            "variacao": 0
+          },
+          "pi": {
+            "pontuacao": 21,
+            "variacao": 0
+          },
+          "pr": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "rj": {
+            "pontuacao": 64,
+            "variacao": 0
+          },
+          "rn": {
+            "pontuacao": 29,
+            "variacao": 0
+          },
+          "ro": {
+            "pontuacao": 0,
+            "variacao": 0
+          },
+          "rr": {
+            "pontuacao": 40,
+            "variacao": ""
+          },
+          "rs": {
+            "pontuacao": 36,
+            "variacao": 0
+          },
+          "sc": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "se": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "sp": {
+            "pontuacao": 31,
+            "variacao": 0
+          },
+          "to": {
+            "pontuacao": 50,
+            "variacao": 0
+          }
+      }
+   },
+   "2":{
+      "dia":9,
+      "mes":4,
+      "ano":2020,
+      "periodo":"09abr - 16abr",
+      "estados":{
+         "ac": {
+            "pontuacao": 14,
+            "variacao": 0
+          },
+          "al": {
+            "pontuacao": 31,
+            "variacao": -2
+          },
+          "am": {
+            "pontuacao": 40,
+            "variacao": 23
+          },
+          "ap": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "ba": {
+            "pontuacao": 33,
+            "variacao": 0
+          },
+          "br": {
+            "pontuacao": 52,
+            "variacao": 16
+          },
+          "ce": {
+            "pontuacao": 60,
+            "variacao": -9
+          },
+          "df": {
+            "pontuacao": 26,
+            "variacao": 5
+          },
+          "es": {
+            "pontuacao": 10,
+            "variacao": 0
+          },
+          "go": {
+            "pontuacao": 19,
+            "variacao": 5
+          },
+          "ma": {
+            "pontuacao": 71,
+            "variacao": 26
+          },
+          "mg": {
+            "pontuacao": 48,
+            "variacao": 0
+          },
+          "ms": {
+            "pontuacao": 43,
+            "variacao": -2
+          },
+          "mt": {
+            "pontuacao": 43,
+            "variacao": 12
+          },
+          "pa": {
+            "pontuacao": 0,
+            "variacao": 0
+          },
+          "pb": {
+            "pontuacao": 40,
+            "variacao": 30
+          },
+          "pe": {
+            "pontuacao": 90,
+            "variacao": 9
+          },
+          "pi": {
+            "pontuacao": 29,
+            "variacao": 8
+          },
+          "pr": {
+            "pontuacao": 24,
+            "variacao": 14
+          },
+          "rj": {
+            "pontuacao": 62,
+            "variacao": -2
+          },
+          "rn": {
+            "pontuacao": 60,
+            "variacao": 31
+          },
+          "ro": {
+            "pontuacao": 38,
+            "variacao": 38
+          },
+          "rr": {
+            "pontuacao": 40,
+            "variacao": 0
+          },
+          "rs": {
+            "pontuacao": 55,
+            "variacao": 19
+          },
+          "sc": {
+            "pontuacao": 17,
+            "variacao": 7
+          },
+          "se": {
+            "pontuacao": 12,
+            "variacao": 2
+          },
+          "sp": {
+            "pontuacao": 69,
+            "variacao": 38
+          },
+          "to": {
+            "pontuacao": 48,
+            "variacao": -2
+          }
+      }
+   },
+   "3":{
+      "dia":16,
+      "mes":4,
+      "ano":2020,
+      "periodo":"16abr - 23abr",
+      "estados":{
+         "ac": {
+           "pontuacao": 19,
+           "variacao": 5
+         },
+         "al": {
+           "pontuacao": 36,
+           "variacao": 5
+         },
+         "am": {
+           "pontuacao": 48,
+           "variacao": 8
+         },
+         "ap": {
+           "pontuacao": 67,
+           "variacao": 57
+         },
+         "ba": {
+           "pontuacao": 33,
+           "variacao": 0
+         },
+         "br": {
+           "pontuacao": 67,
+           "variacao": 15
+         },
+         "ce": {
+           "pontuacao": 95,
+           "variacao": 35
+         },
+         "df": {
+           "pontuacao": 29,
+           "variacao": 3
+         },
+         "es": {
+           "pontuacao": 93,
+           "variacao": 83
+         },
+         "go": {
+           "pontuacao": 19,
+           "variacao": 0
+         },
+         "ma": {
+           "pontuacao": 74,
+           "variacao": 3
+         },
+         "mg": {
+           "pontuacao": 52,
+           "variacao": 4
+         },
+         "ms": {
+           "pontuacao": 43,
+           "variacao": 0
+         },
+         "mt": {
+           "pontuacao": 43,
+           "variacao": 0
+         },
+         "pa": {
+           "pontuacao": 40,
+           "variacao": 40
+         },
+         "pb": {
+           "pontuacao": 43,
+           "variacao": 3
+         },
+         "pe": {
+           "pontuacao": 95,
+           "variacao": 5
+         },
+         "pi": {
+           "pontuacao": 71,
+           "variacao": 42
+         },
+         "pr": {
+           "pontuacao": 74,
+           "variacao": 50
+         },
+         "rj": {
+           "pontuacao": 74,
+           "variacao": 12
+         },
+         "rn": {
+           "pontuacao": 67,
+           "variacao": 7
+         },
+         "ro": {
+           "pontuacao": 43,
+           "variacao": 5
+         },
+         "rr": {
+           "pontuacao": 40,
+           "variacao": 0
+         },
+         "rs": {
+           "pontuacao": 55,
+           "variacao": 0
+         },
+         "sc": {
+           "pontuacao": 52,
+           "variacao": 35
+         },
+         "se": {
+           "pontuacao": 21,
+           "variacao": 9
+         },
+         "sp": {
+           "pontuacao": 62,
+           "variacao": -7
+         },
+         "to": {
+           "pontuacao": 45,
+           "variacao": -3
+         }
+      }
+   }
+}
