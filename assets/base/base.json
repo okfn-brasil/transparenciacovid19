@@ -3,7 +3,7 @@
     "dia":3,
     "mes":4,
     "ano":2020,
-    "periodo":"02abr - 09abr",
+    "periodo":"02abr - 08abr",
     "estados":{
         "ac": {
         "pontuacao": 14,
@@ -125,7 +125,7 @@
     "dia":9,
     "mes":4,
     "ano":2020,
-    "periodo":"09abr - 16abr",
+    "periodo":"09abr - 15abr",
     "estados":{
         "ac": {
         "pontuacao": 14,
@@ -247,7 +247,7 @@
     "dia":16,
     "mes":4,
     "ano":2020,
-    "periodo":"16abr - 23abr",
+    "periodo":"16abr - 22abr",
     "estados":{
         "ac": {
         "pontuacao": 19,
@@ -369,7 +369,7 @@
     "dia":23,
     "mes":4,
     "ano":2020,
-    "periodo":"23abr - 30abr",
+    "periodo":"23abr - 29abr",
     "estados":{
         "ac": {
         "pontuacao": 38,
