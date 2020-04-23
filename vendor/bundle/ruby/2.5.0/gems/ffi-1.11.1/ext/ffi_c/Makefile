@@ -31,8 +31,8 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(rubysitearchprefix)/vendor_ruby/$(ruby_version)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
-sitearchdir = $(DESTDIR)./.gem.20200403-11631-9n2ien
-sitelibdir = $(DESTDIR)./.gem.20200403-11631-9n2ien
+sitearchdir = $(DESTDIR)./.gem.20200422-26678-1iw0doj
+sitelibdir = $(DESTDIR)./.gem.20200422-26678-1iw0doj
 sitedir = $(DESTDIR)/usr/local/lib/site_ruby
 rubyarchdir = $(rubyarchprefix)/$(ruby_version)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -82,12 +82,12 @@ optflags = -O3
 debugflags = -ggdb3
 warnflags = 
 CCDLFLAGS = -fPIC
-CFLAGS   = $(CCDLFLAGS) -g -O2 -fdebug-prefix-map=/build/ruby2.5-B0MvC_/ruby2.5-2.5.1=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC $(ARCH_FLAG)
-INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
+CFLAGS   = $(CCDLFLAGS) -g -O2 -fdebug-prefix-map=/build/ruby2.5-B0MvC_/ruby2.5-2.5.1=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC  $(ARCH_FLAG)
+INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir) 
 DEFS     = 
 CPPFLAGS = -DRUBY_EXTCONF_H=\"$(RUBY_EXTCONF_H)\" -Wdate-time -D_FORTIFY_SOURCE=2 $(DEFS) $(cppflags)
-CXXFLAGS = $(CCDLFLAGS) -g -O2 -fdebug-prefix-map=/build/ruby2.5-B0MvC_/ruby2.5-2.5.1=. -fstack-protector-strong -Wformat -Werror=format-security $(ARCH_FLAG)
-ldflags  = -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic
+CXXFLAGS = $(CCDLFLAGS) -g -O2 -fdebug-prefix-map=/build/ruby2.5-B0MvC_/ruby2.5-2.5.1=. -fstack-protector-strong -Wformat -Werror=format-security  $(ARCH_FLAG)
+ldflags  = -L. -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -fstack-protector -rdynamic -Wl,-export-dynamic 
 dldflags = -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,now -Wl,--compress-debug-sections=zlib 
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
@@ -135,11 +135,11 @@ extout =
 extout_prefix = 
 target_prefix = 
 LOCAL_LIBS = 
-LIBS = $(LIBRUBYARG_SHARED)  -lpthread -lgmp -ldl -lcrypt -lm   -lc
+LIBS = $(LIBRUBYARG_SHARED) -lffi  -lffi -lpthread -lgmp -ldl -lcrypt -lm   -lc
 ORIG_SRCS = AbstractMemory.c ArrayType.c Buffer.c Call.c ClosurePool.c DynamicLibrary.c Function.c FunctionInfo.c LastError.c LongDouble.c MappedType.c MemoryPointer.c MethodHandle.c Platform.c Pointer.c Struct.c StructByValue.c StructLayout.c Thread.c Type.c Types.c Variadic.c ffi.c
 SRCS = $(ORIG_SRCS) 
 OBJS = AbstractMemory.o ArrayType.o Buffer.o Call.o ClosurePool.o DynamicLibrary.o Function.o FunctionInfo.o LastError.o LongDouble.o MappedType.o MemoryPointer.o MethodHandle.o Platform.o Pointer.o Struct.o StructByValue.o StructLayout.o Thread.o Type.o Types.o Variadic.o ffi.o
-HDRS = $(srcdir)/rbffi.h $(srcdir)/MethodHandle.h $(srcdir)/Function.h $(srcdir)/MappedType.h $(srcdir)/Type.h $(srcdir)/Struct.h $(srcdir)/rbffi_endian.h $(srcdir)/LastError.h $(srcdir)/compat.h $(srcdir)/ClosurePool.h $(srcdir)/DynamicLibrary.h $(srcdir)/Thread.h $(srcdir)/StructByValue.h $(srcdir)/MemoryPointer.h $(srcdir)/ArrayType.h $(srcdir)/Pointer.h $(srcdir)/Types.h $(srcdir)/Call.h $(srcdir)/extconf.h $(srcdir)/LongDouble.h $(srcdir)/AbstractMemory.h $(srcdir)/Platform.h
+HDRS = $(srcdir)/MethodHandle.h $(srcdir)/rbffi.h $(srcdir)/ClosurePool.h $(srcdir)/AbstractMemory.h $(srcdir)/Platform.h $(srcdir)/rbffi_endian.h $(srcdir)/Pointer.h $(srcdir)/LastError.h $(srcdir)/Function.h $(srcdir)/DynamicLibrary.h $(srcdir)/Types.h $(srcdir)/Struct.h $(srcdir)/MappedType.h $(srcdir)/compat.h $(srcdir)/extconf.h $(srcdir)/ArrayType.h $(srcdir)/Thread.h $(srcdir)/Call.h $(srcdir)/LongDouble.h $(srcdir)/Type.h $(srcdir)/StructByValue.h $(srcdir)/MemoryPointer.h
 LOCAL_HDRS = 
 TARGET = ffi_c
 TARGET_NAME = ffi_c
@@ -262,5 +262,3 @@ $(TARGET_SO): $(OBJS) Makefile
 
 
 $(OBJS): $(HDRS) $(ruby_headers)
-LIBFFI_HOST=--host=
-include ${srcdir}/libffi.mk
