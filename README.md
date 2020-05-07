@@ -1,5 +1,5 @@
 # TRANSPARENCIA COVID19
-![screenshot](img/transparencia-covid19.png)
+![screenshot](./assets/images/banner-covid.png)
 
 Dados abertos podem salvar vidas.
 
