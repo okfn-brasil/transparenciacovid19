@@ -1,5 +1,5 @@
 # TRANSPARENCIA COVID19
-![screenshot](img/transparencia-covid19.png)
+![screenshot](https://github.com/okfn-brasil/transparenciacovid19/blob/master/assets/images/banner-covid.png)
 
 Dados abertos podem salvar vidas.
 
