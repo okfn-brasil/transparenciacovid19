@@ -1,4 +1,4 @@
-{ 
+{
     "1":{
       "dia":3,
       "mes":4,
@@ -120,7 +120,8 @@
     }
   },
 
- 
+
+
     "2":{
       "dia":9,
       "mes":4,
@@ -242,7 +243,8 @@
     }
   },
 
- 
+
+
     "3":{
       "dia":16,
       "mes":4,
@@ -364,7 +366,8 @@
     }
   },
 
- 
+
+
     "4":{
       "dia":23,
       "mes":4,
@@ -486,7 +489,8 @@
     }
   },
 
- 
+
+
     "5":{
       "dia":30,
       "mes":4,
@@ -608,7 +612,8 @@
     }
   },
 
- 
+
+
     "6":{
       "dia":7,
       "mes":5,
@@ -726,6 +731,127 @@
         "to": {
           "pontuacao": 45,
           "variacao": -5
+      }
+    }
+  },
+
+    "7":{
+      "dia":14,
+      "mes":5,
+      "ano":2020,
+      "periodo":"14mai - 20mai",
+      "estados":{
+        "ac": {
+          "pontuacao": 88,
+          "variacao": 33
+        },
+        "al": {
+          "pontuacao": 98,
+          "variacao": 24
+        },
+        "am": {
+          "pontuacao": 52,
+          "variacao": -5
+        },
+        "ap": {
+          "pontuacao": 93,
+          "variacao": 5
+        },
+        "ba": {
+          "pontuacao": 55,
+          "variacao": 0
+        },
+        "br": {
+          "pontuacao": 71,
+          "variacao": 14
+        },
+        "ce": {
+          "pontuacao": 95,
+          "variacao": 5
+        },
+        "df": {
+          "pontuacao": 86,
+          "variacao": 0
+        },
+        "es": {
+          "pontuacao": 98,
+          "variacao": 0
+        },
+        "go": {
+          "pontuacao": 90,
+          "variacao": 4
+        },
+        "ma": {
+          "pontuacao": 79,
+          "variacao": 0
+        },
+        "mg": {
+          "pontuacao": 90,
+          "variacao": 2
+        },
+        "ms": {
+          "pontuacao": 71,
+          "variacao": 28
+        },
+        "mt": {
+          "pontuacao": 45,
+          "variacao": 0
+        },
+        "pa": {
+          "pontuacao": 86,
+          "variacao": 24
+        },
+        "pb": {
+          "pontuacao": 86,
+          "variacao": 10
+        },
+        "pe": {
+          "pontuacao": 98,
+          "variacao": 0
+        },
+        "pi": {
+          "pontuacao": 81,
+          "variacao": 0
+        },
+        "pr": {
+          "pontuacao": 90,
+          "variacao": 2
+        },
+        "rj": {
+          "pontuacao": 76,
+          "variacao": 0
+        },
+        "rn": {
+          "pontuacao": 95,
+          "variacao": 2
+        },
+        "ro": {
+          "pontuacao": 98,
+          "variacao": 0
+        },
+        "rr": {
+          "pontuacao": 43,
+          "variacao": 3
+        },
+        "rs": {
+          "pontuacao": 55,
+          "variacao": 0
+        },
+        "sc": {
+          "pontuacao": 48,
+          "variacao": 0
+        },
+        "se": {
+          "pontuacao": 60,
+          "variacao": 0
+        },
+        "sp": {
+          "pontuacao": 69,
+          "variacao": 5
+        },
+        "to": {
+          "pontuacao": 45,
+          "variacao": 0
       }
     }
   }
