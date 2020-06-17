@@ -14,8 +14,11 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x64-mingw32)
     ffi (1.11.1)
+    ffi (1.11.1-x64-mingw32)
     forwardable-extended (2.6.0)
+    gem 'wdm', '>= 0.1.0' if Gem.win_platform?
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -59,6 +62,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   airspace-jekyll!
