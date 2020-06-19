@@ -80,15 +80,68 @@
             </div>
         </header>
 
+       
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jul 2, 2020").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<style>
+	#countdown{
+		font-size: 5rem;
+		font-weight: 700;
+	}
+</style>
+
+
         <!-- Índice de transparência da Covid-19 -->
         <article id="indice">
             <div class="container-fluid wrap">
                 <div class="row">
                     <section class="col-xs-12">
-                        <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> da Covid-19</h3>
+                        <h3 class="t7 tcp w300" style="text-align:center"><strong>Índice de transparência</strong> da Covid-19</h3>
 
                         <!-- Próxima Avaliação-->
-                        <p class="t2 uc tcc w400 mb2 ff3">Próxima avaliação: 2 de julho, com lançamento da nova versão do Índice. Aguarde!</p>
+                        <!-- <p class="t2 uc tcc w400 mb2 ff3">Próxima avaliação: 2 de julho, com lançamento da nova versão do Índice. Aguarde!</p> -->
+
+                        <!-- Display the countdown timer in an element -->
+
+
+
+                        
+            <h3 class="t7 tcp w300" style="text-align:center; padding-top: 20px;">Nova versão: </h3>
+            <p></p>
+<p id="countdown" style="text-align:center; padding-bottom: 20px;"></p>
+
+
+
 
                     </section>
 
