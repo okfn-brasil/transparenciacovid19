@@ -4,13 +4,17 @@
     <title>157BDDE6-7230-41C7-A597-BD58B989C7FF</title>
     <desc>Created with sketchtool.</desc>
     <defs>
-        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-1">
-            <stop stop-color="#D6D6D6" offset="0%"></stop>
-            <stop stop-color="#D6D6D6" stop-opacity="0.2" offset="100%"></stop>
+                <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-1">
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
         </linearGradient>
         <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-2">
-            <stop stop-color="#D6D6D6" offset="0%"></stop>
-            <stop stop-color="#D6D6D6" stop-opacity="0.2" offset="100%"></stop>
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-3">
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="wires" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
