@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="470px" height="430px" viewBox="0 0 470 430" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="wires" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_Na-mídia-v02-Copy-3" transform="translate(-450.000000, -306.000000)">
+            <g id="Group-2" transform="translate(452.000000, 307.000000)">
+                <circle id="Oval" stroke="#FFFFFF" cx="256" cy="211" r="72.5"></circle>
+                <circle id="Oval-Copy" stroke="#FFFFFF" opacity="0.800000012" cx="256" cy="211" r="111.5"></circle>
+                <circle id="Oval-Copy-9" stroke="#FFFFFF" opacity="0.600000024" cx="256" cy="211" r="152.5"></circle>
+                <circle id="Oval-Copy-10" stroke="#FFFFFF" opacity="0.400000006" cx="250.971564" cy="211.971564" r="182.052133"></circle>
+                <circle id="Oval-Copy-11" stroke="#FFFFFF" opacity="0.200000003" cx="253" cy="214" r="214"></circle>
+                <polygon id="Fill-1" fill="url(#linearGradient-1)" points="141 309.5 199.460308 309.5 170.229538 261.98"></polygon>
+                <polygon id="Stroke-4" stroke="#00CB8D" stroke-width="3" stroke-linecap="round" points="170.230154 276.005354 185.768615 301.265662 154.691692 301.265662"></polygon>
+                <polygon id="Fill-5" fill="url(#linearGradient-2)" points="274.724383 103.718426 245.97983 132.462979 274.724383 161.207532 303.468936 132.462979"></polygon>
+                <polygon id="Stroke-8" stroke="#00CB8D" stroke-width="3" stroke-linecap="round" points="274.72426 149.543979 257.643877 132.463596 274.72426 115.383213 291.804643 132.463596"></polygon>
+                <path d="M374.029,330.735 C386.374,330.735 396.381,320.727 396.381,308.382 C396.381,296.037 386.374,286.03 374.029,286.03 C361.683,286.03 351.675,296.037 351.675,308.382 C351.675,320.727 361.683,330.735 374.029,330.735 Z" id="Fill-9" fill="url(#linearGradient-3)"></path>
+                <path d="M388.146,308.3823 C388.146,316.1793 381.825,322.5003 374.028,322.5003 C366.231,322.5003 359.911,316.1793 359.911,308.3823 C359.911,300.5853 366.231,294.2643 374.028,294.2643 C381.825,294.2643 388.146,300.5853 388.146,308.3823 Z" id="Stroke-12" stroke="#00CB8D" stroke-width="3" stroke-linecap="round"></path>
+                <path d="M53.9946958,295.16355 L76.6795831,238.918246 C78.2466689,235.036094 76.3675425,230.618197 72.4853913,229.052258 C68.6020929,227.48632 64.1853428,229.364299 62.6194041,233.247597 L54.111711,254.339013 L41.7058057,249.33604 C38.8504054,248.183096 35.6015129,249.564334 34.4497163,252.420882 L32.2814935,257.79555 L23.3917802,254.210526 C20.5352327,253.057582 17.2863402,254.43882 16.1345436,257.295368 L0.908801473,295.045388 C-1.66782727,301.433041 1.42160337,308.700602 7.81040367,311.277231 L33.1545187,321.5 L74.6903247,302.568777 C78.1330954,300.998249 79.8550543,297.100037 78.6952272,293.497805 C77.3518468,289.324262 72.7148329,287.204222 68.6789558,288.920445 L53.9946958,295.16355 Z" id="pointing-hand" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>
