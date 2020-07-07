@@ -96,11 +96,11 @@
                         <!-- Switch Estado / Capital-->
                         <div class="switch grande">
                             <label>
-                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val());" checked>
+                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
                                 <p><span>Estados</span></p>
                             </label>
                             <!-- <label>
-                                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val());">
+                                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
                                 <p><span>Capitais</span></p>
                             </label> -->
                         </div>
@@ -122,7 +122,9 @@
 
                     <!-- Mapa -->
                     <section class="col-xs-12 col-md-6">
-                        <h4 class="t4 tcp w600 ff1">Avaliação por estado da federação</h4>
+                        <h4 class="t4 tcp w600 ff1" id="titulo-estados">Avaliação por estado da federação</h4>
+                        <h4 class="t4 tcp w600 ff1" id="titulo-capitais" style="display: none;">Avaliação por capital da federação</h4>
+
                         <div class="grafico-mapa">
                             <!-- SVG -->   
                             <svg class="mapa" viewBox="0 0 475 488.2"></svg>
@@ -359,6 +361,21 @@
     </main>
 
 </body>
+    <script>
+        function hideEstados() {
+            var e = document.getElementById("titulo-estados");
+            var f = document.getElementById("titulo-capitais");
+            e.style.display = 'none';
+            f.style.display = 'inline'   
+        }
+
+        function hideCapitais() {
+            var e = document.getElementById("titulo-capitais");
+            var f = document.getElementById("titulo-estados");
+            e.style.display = 'none';
+            f.style.display = 'inline'
+        }
+    </script>
     <script>
         proxAvaliacaoEstados = "02 de junho";
         proxAvaliacaoCapitais = "09 de junho";
