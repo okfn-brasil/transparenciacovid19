@@ -26,30 +26,14 @@
             <ul>
                 <img class="anm" data-speed-x="-0.5" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-magenta.png">
                 <img class="anm" data-speed-x="2" data-speed-y="-1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-verde.png">
-                <li><a href="./" class="ativo">Inicio</a></li>
+                <li><a href="./">Inicio</a></li>
                 <li><a href="./boletins.html">Boletins</a></li>
                 <li><a href="./midia.html">Na mídia</a></li>
-                <li><a href="./metodologia.html">Metodologia</a></li>
-                <li>
-                    <input type="checkbox" name="dropdown" id="dropdown-bases">
-                    <label for="dropdown-bases">Bases de dados</label>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1Ol_cMNdOA90hndREuGjkKler1xbmsLksWQAuZmJpBJE/edit?usp=sharing" target="_blank" >Estados</a></li>
-                        <!-- <li><a href="">Capitais</a></li> -->
-                    </ul>
-                </li>
-                <li><a href="./toolkits.html">Toolkits</a></li>
-                <li><a href="./entrevistas.html">Entrevistas</a></li>
                 <li><a href="./sobre.html">Sobre</a></li>
-                <li>
-                    <input type="checkbox" name="dropdown" id="dropdown-versao">
-                    <label for="dropdown-versao">Versão anterior</label>
-                    <ul>
-                        <li><a href="./v1">Mapa</a></li>
-                        <li><a href="https://transparenciacovid19.ok.org.br/files/Nota_Metodologica_Transparencia_da_Covid-19V.3.pdf" target="_blank">Metodologia</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/18z8H9sR13HDQ007kCKJRJ_Y9gNCacjHRPW9j28aRlUk/edit#gid=793093003" target="_blank">Base de dados</a></li>
-                    </ul>
-                </li>
+                <li><a href="https://transparenciacovid19.ok.org.br/files/Nota_Metodologica_Transparencia_da_Covid-19V.2.pdf" target="_blank">Metodologia</a></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/18z8H9sR13HDQ007kCKJRJ_Y9gNCacjHRPW9j28aRlUk/edit#gid=793093003" target="_blank">Base de Dados</a></li>
+                <!--<li><a href="./">Toolkit para Gestores</a></li>-->
+                <li><a href="../">Versão atual</a></li>
             </ul>
             <div class="logo-wrapper">
                 <a href="https://www.ok.org.br/" target="_blank" class="logo"></a>
@@ -66,7 +50,7 @@
             <div class="container-fluid wrap">
                 <div class="row">
                     <div class="col-xs-12 col-md-7 mb2 mb0-md relative z3">
-                        <h1 class="t8 w300 tcb ls1">Transparência <span class="w700 tcrs block">COVID-19 <span class="versao">2.0</span></span></h1>
+                        <h1 class="t8 w300 tcb ls1">Transparência <span class="w700 tcvd block">COVID-19 <span class="versao">1.0</span></span></h1>
                         <h2 class="t6 w300 tcb mb2 mb0-md">Dados abertos podem salvar vidas</h2>
                         <ul class="compartilhar">
                             <li><a href="whatsapp://send?text=https%3A//transparenciacovid19.ok.org.br/" target="_blank" class="whatsapp"></a></li>
@@ -92,21 +76,10 @@
             <div class="container-fluid wrap">
                 <div class="row">
                     <section class="col-xs-12">
-
-                        <!-- Switch Estado / Capital-->
-                        <div class="switch grande">
-                            <label>
-                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val());" checked>
-                                <p><span>Estados</span></p>
-                            </label>
-                            <label>
-                                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val());">
-                                <p><span>Capitais</span></p>
-                            </label>
-                        </div>
+                        <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> da Covid-19</h3>
 
                         <!-- Próxima Avaliação-->
-                        <p class="t2 uc tcc w400 mb2 ff2">próxima avaliação em <span class="proxavaliacao"></span></p>
+                        <p class="t2 uc tcc w400 mb2 ff3">próxima avaliação em 23 de abril</p>
 
                     </section>
 
@@ -122,8 +95,8 @@
                     <section class="col-xs-12 col-md-6">
                         <h4 class="t4 tcp w600 ff1">Avaliação por estado da federação</h4>
                         <div class="grafico-mapa">
-                            <!-- SVG -->   
-                            <svg class="mapa" viewBox="0 0 475 488.2"></svg>
+                            <!-- SVG -->
+                            <svg class="mapa" viewBox="0 0 465 488.2"></svg>                        
 
                             <p class="t2 uc tcc w400 ff3 mt2">Níveis de transparência</p>
                             <ul class="legenda">
@@ -212,7 +185,7 @@
                     <div class="col-xs-12 col-md-7 relative z2">
                         <h3 class="t6 w700 mb1 tcb">Sobre o Índice</h3>
                         <p class="t3 tcb ff1 w400 lh1-50">O Índice de Transparência da Covid-19 é uma iniciativa da Open Knowledge Brasil (OKBR) para avaliar a qualidade dos dados e informações relativos à pandemia do novo coronavírus que têm sido publicados pela União e pelos estados brasileiros em seus portais oficiais. Para superarmos este momento tão desafiador para gestores públicos e população, acreditamos que nenhuma ferramenta é mais poderosa que a colaboração, e a informação é parte fundamental desse processo.</p>
-                        <a href="./sobre.html" class="btn-txt">Ler mais</a>
+                        <a href="" class="btn-txt">Ler mais</a>
                     </div>
                     <div class="col-xs-12 col-md-5">
                         <figure class="corona">
@@ -237,17 +210,16 @@
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <a href="./metodologia.html" class="box-link nota">
+                        <a href="https://transparenciacovid19.ok.org.br/files/Nota_Metodologica_Transparencia_da_Covid-19V.2.pdf" target="_blank" class="box-link nota">
                             <h5 class="t5 tcb w700">Nota Metodológica</h5>
                             <button class="btn-txt">Entenda</button>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div target="_blank" class="box-link base">
-                            <h5 class="t5 tcb w700">Bases de dados</h5>
-                            <a href="https://docs.google.com/spreadsheets/d/1Ol_cMNdOA90hndREuGjkKler1xbmsLksWQAuZmJpBJE/edit?usp=sharing" target="_blank" class="btn-txt block mb05">Ver dados dos estados</a>
-                            <!-- <a href="https://docs.google.com/spreadsheets/d/1nX-jt-dgQ1Q5Ke9zXr-dQxC9lAxQy0Zac8WHCyb3zKc/edit?usp=sharing" target="_blank" class="btn-txt block">Ver dados das capitais</a> -->
-                        </div>
+                        <a href="https://docs.google.com/spreadsheets/d/18z8H9sR13HDQ007kCKJRJ_Y9gNCacjHRPW9j28aRlUk/edit#gid=793093003" target="_blank" class="box-link base">
+                            <h5 class="t5 tcb w700">Base de dados completa</h5>
+                            <button class="btn-txt">Ver dados</button>
+                        </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
                         <a href="./midia.html" class="box-link midia">
@@ -256,15 +228,15 @@
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <a href="./toolkits.html" class="box-link gestores">
+                        <a class="box-link gestores">
                             <h5 class="t5 tcb w700">Toolkit para gestores</h5>
-                            <button class="btn-txt">Ver todos</button>
+                            <button class="btn-txt" disabled>Em breve</button>
                         </a>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <a href="./entrevistas.html" class="box-link casos">
-                            <h5 class="t5 tcb w700">Entrevistas</h5>
-                            <button class="btn-txt">Ver todas</button>
+                        <a class="box-link casos">
+                            <h5 class="t5 tcb w700">Casos inspiradores</h5>
+                            <button class="btn-txt" disabled>Em breve</button>
                         </a>
                     </div>
                 </div>
@@ -279,8 +251,8 @@
                         <h3 class="t7 tcp w700 ls1">Gestor</h3>
                         <p class="t6 tcb w400 mb2 mb0-md">Precisa de ajuda para abrir seus dados?</p>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-3 col-md-offset-1 tc">
-                        <a href="./sobre.html#contato" class="btn btn-branco">Entre em contato</a>
+                    <div class="col-xs-12 col-sm-6 col-md-4 tc">
+                        <a href="" class="btn btn-branco">Entre em contato</a>
                     </div>
                 </div>
             </div>
@@ -309,7 +281,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="flex mb2">
+                        <div class="flex mb1">
                             <div class="mr2">
                                 <h5 class="t2 tcvd w300 uc mb1">Design</h5>
                                 <a href="http://cafe.art.br/" target="_blank" class="cafe">Café</a>
@@ -321,26 +293,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt1">
-                    <div class="col-xs-12 flex flex-column flex-row-sm  between-xs">
-                        <div class="flex flex-column flex-row-sm">
-                            <div class="mr2 mb2 apoio">
-                                <h5 class="t2 tcvd w300 uc mb1">Apoio</h5>
-                                <a href="https://www.hivos.org/" target="_blank">
-                                    <img src="./assets/images/hivos.png" alt="Hivos">
-                                </a>
-                            </div>
-                            <div>
-                                <h5 class="t2 tcvd w300 uc mb1">Apoio Técnico</h5>
-                                <a href="https://institutodegovernoaberto.com.br/" target="_blank">
-                                    <img src="./assets/images/iga.svg" alt="iga">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex">
-                        </div>
-                    </div>
-                </div>
                 <div class="row mt2">
                     <div class="col-xs-12">
                         <div class="flex flex-column flex-row-md">
@@ -348,7 +300,7 @@
                                 <div class="cc"></div>
                                 <div class="user"></div>
                             </div>
-                            <p class="t2 ff1 tcb">Todo o conteúdo do site Transparência Covid-19 está disponível sob a licença <a class="link" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank">Creative Commons Atribuição 4.0</a> Internacional, o que significa que pode ser compartilhado e reutilizado para trabalhos derivados, desde que citada a fonte.</p>
+                            <p class="t2 ff1 tcb">Todo o conteúdo do site Transparência Covid-19 está disponível sob a licença <a class="tcvd" href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank">Creative Commons Atribuição 4.0</a> Internacional, o que significa que pode ser compartilhado e reutilizado para trabalhos derivados, desde que citada a fonte.</p>
                         </div>
                     </div>
                 </div>
@@ -357,9 +309,5 @@
     </main>
 
 </body>
-    <script>
-        proxAvaliacaoEstados = "02 de junho";
-        proxAvaliacaoCapitais = "09 de junho";
-    </script>
     <script src="./build/script.js"></script>
 </html>
