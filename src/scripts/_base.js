@@ -154,7 +154,7 @@ var mesesAb = {
 }
 
 function nivelar(a){
-    return a>80?"alto":
+    return a>79?"alto":
     a>59?"bom":
     a>39?"medio":
     a>19?"baixo":
