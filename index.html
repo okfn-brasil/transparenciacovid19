@@ -107,11 +107,11 @@
                         <!-- Switch Estado / Capital-->
                         <div class="switch grande">
                             <label>
-                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val());" checked>
+                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();"  hideCapitais(); checked>
                                 <p><span>Estados</span></p>
                             </label>
                             <label>
-                                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val());">
+                                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
                                 <p><span>Capitais</span></p>
                             </label>
                         </div>
@@ -372,6 +372,21 @@
     </main>
 
 </body>
+    <script>
+        function hideEstados() {
+            var e = document.getElementById("titulo-estados");
+            var f = document.getElementById("titulo-capitais");
+            e.style.display = 'none';
+            f.style.display = 'inline'   
+        }
+
+        function hideCapitais() {
+            var e = document.getElementById("titulo-capitais");
+            var f = document.getElementById("titulo-estados");
+            e.style.display = 'none';
+            f.style.display = 'inline'
+        }
+</script>
     <script>
         proxAvaliacaoEstados = "23 de junho";
         proxAvaliacaoCapitais = "30 de junho";
