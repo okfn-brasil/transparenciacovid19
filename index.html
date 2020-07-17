@@ -46,7 +46,7 @@
                     <label for="dropdown-bases">Bases de dados</label>
                     <ul>
                         <li><a href="https://docs.google.com/spreadsheets/d/1Ol_cMNdOA90hndREuGjkKler1xbmsLksWQAuZmJpBJE/edit?usp=sharing" target="_blank" >Estados</a></li>
-                        <!-- <li><a href="">Capitais</a></li> -->
+                        <li><a href="https://docs.google.com/spreadsheets/d/1nX-jt-dgQ1Q5Ke9zXr-dQxC9lAxQy0Zac8WHCyb3zKc/edit?usp=sharing" target="_blank" >Capitais</a></li>
                     </ul>
                 </li>
                 <li><a href="./toolkits.html">Toolkits</a></li>
@@ -107,13 +107,13 @@
                         <!-- Switch Estado / Capital-->
                         <div class="switch grande">
                             <label>
-                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
+                                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();"  hideCapitais(); checked>
                                 <p><span>Estados</span></p>
                             </label>
-                            <!-- <label>
+                            <label>
                                 <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
                                 <p><span>Capitais</span></p>
-                            </label> -->
+                            </label>
                         </div>
 
                         <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> da Covid-19</h3>
@@ -261,7 +261,7 @@
                         <div target="_blank" class="box-link base">
                             <h5 class="t5 tcb w700">Bases de dados</h5>
                             <a href="https://docs.google.com/spreadsheets/d/1Ol_cMNdOA90hndREuGjkKler1xbmsLksWQAuZmJpBJE/edit?usp=sharing" target="_blank" class="btn-txt block mb05">Ver dados dos estados</a>
-                            <!-- <a href="https://docs.google.com/spreadsheets/d/1nX-jt-dgQ1Q5Ke9zXr-dQxC9lAxQy0Zac8WHCyb3zKc/edit?usp=sharing" target="_blank" class="btn-txt block">Ver dados das capitais</a> -->
+                            <a href="https://docs.google.com/spreadsheets/d/1nX-jt-dgQ1Q5Ke9zXr-dQxC9lAxQy0Zac8WHCyb3zKc/edit?usp=sharing" target="_blank" class="btn-txt block">Ver dados das capitais</a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
@@ -386,10 +386,10 @@
             e.style.display = 'none';
             f.style.display = 'inline'
         }
-    </script>
+</script>
     <script>
         proxAvaliacaoEstados = "23 de junho";
-        proxAvaliacaoCapitais = "09 de junho";
+        proxAvaliacaoCapitais = "30 de junho";
     </script>
     <script src="./build/script.js"></script>
 </html>
