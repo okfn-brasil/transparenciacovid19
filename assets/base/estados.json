@@ -243,7 +243,6 @@
     }
   },
 
-   
     "3":{
       "dia":6,
       "mes":8,
@@ -288,8 +287,8 @@
           "variacao": 0
         },
         "go": {
-          "pontuacao": 83,
-          "variacao": -1
+          "pontuacao": 84,
+          "variacao": 0
         },
         "ma": {
           "pontuacao": 79,
@@ -324,8 +323,8 @@
           "variacao": 0
         },
         "pr": {
-          "pontuacao": 95,
-          "variacao": 10
+          "pontuacao": 88,
+          "variacao": 3
         },
         "rj": {
           "pontuacao": 65,
@@ -348,12 +347,12 @@
           "variacao": 6
         },
         "sc": {
-          "pontuacao": 79,
-          "variacao": 1
+          "pontuacao": 78,
+          "variacao": 0
         },
         "se": {
-          "pontuacao": 86,
-          "variacao": -1
+          "pontuacao": 87,
+          "variacao": 0
         },
         "sp": {
           "pontuacao": 64,
