@@ -122,7 +122,7 @@
   },
 
     "2":{
-      "dia":22,
+      "dia":23,
       "mes":7,
       "ano":2020,
       "periodo":"23jul - 05ago",
@@ -247,7 +247,7 @@
       "dia":6,
       "mes":8,
       "ano":2020,
-      "periodo":"06ago - 19ago",
+      "periodo":"06ago - 20ago",
 
       "estados":{
         "ac": {
@@ -365,11 +365,11 @@
     }
   },
  
-    "4":{
+     "4":{
       "dia":21,
       "mes":8,
       "ano":2020,
-      "periodo":"20ago - 3set",
+      "periodo":"21ago - 3set",
 
       "estados":{
         "ac": {
@@ -421,8 +421,8 @@
           "variacao": -2
         },
         "ms": {
-          "pontuacao": 96,
-          "variacao": -4
+          "pontuacao": 100,
+          "variacao": 0
         },
         "mt": {
           "pontuacao": 64,
