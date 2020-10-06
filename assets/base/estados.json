@@ -369,7 +369,7 @@
       "dia":21,
       "mes":8,
       "ano":2020,
-      "periodo":"21ago - 03set",
+      "periodo":"21ago - 3set",
 
       "estados":{
         "ac": {
@@ -490,7 +490,7 @@
       "dia":8,
       "mes":9,
       "ano":2020,
-      "periodo":"08set - 05out",
+      "periodo":"8set - 5out",
 
       "estados":{
         "ac": {
@@ -609,10 +609,10 @@
   },
 
     "6":{
-      "dia":18,
-      "mes":9,
+      "dia":6,
+      "mes":10,
       "ano":2020,
-      "periodo":"06out - 11nov",
+      "periodo":"6out - 11nov",
 
       "estados":{
         "ac": {
