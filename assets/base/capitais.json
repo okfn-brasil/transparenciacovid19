@@ -681,6 +681,119 @@
           "variacao": -1
       }
     }
-  }
+  },
 
+    "7":{
+      "dia":11,
+      "mes":12,
+      "ano":2020,
+      "periodo":"27nov- 16dez",
+
+      "capitais":{
+        "ac": {
+          "pontuacao": 15,
+          "variacao": -15
+        },
+        "al": {
+          "pontuacao": 86,
+          "variacao": -3
+        },
+        "am": {
+          "pontuacao": 100,
+          "variacao": 0
+        },
+        "ap": {
+          "pontuacao": 100,
+          "variacao": 0
+        },
+        "ba": {
+          "pontuacao": 84,
+          "variacao": 2
+        },        
+        "ce": {
+          "pontuacao": 99,
+          "variacao": 0
+        },
+        "es": {
+          "pontuacao": 0,
+          "variacao": -98
+        },
+        "go": {
+          "pontuacao": 31,
+          "variacao": 0
+        },
+        "ma": {
+          "pontuacao": 25,
+          "variacao": -25
+        },
+        "mg": {
+          "pontuacao": 60,
+          "variacao": 2
+        },
+        "ms": {
+          "pontuacao": 31,
+          "variacao": 1
+        },
+        "mt": {
+          "pontuacao": 51,
+          "variacao": -9
+        },
+        "pa": {
+          "pontuacao": 58,
+          "variacao": 3
+        },
+        "pb": {
+          "pontuacao": 90,
+          "variacao": -4
+        },
+        "pe": {
+          "pontuacao": 50,
+          "variacao": -3
+        },
+        "pi": {
+          "pontuacao": 50,
+          "variacao": 0
+        },
+        "pr": {
+          "pontuacao": 72,
+          "variacao": 0
+        },
+        "rj": {
+          "pontuacao": 67,
+          "variacao": -3
+        },
+        "rn": {
+          "pontuacao": 88,
+          "variacao": -9
+        },
+        "ro": {
+          "pontuacao": 55,
+          "variacao": -40
+        },
+        "rr": {
+          "pontuacao": 49,
+          "variacao": -7
+        },
+        "rs": {
+          "pontuacao": 95,
+          "variacao": 3
+        },
+        "sc": {
+          "pontuacao": 81,
+          "variacao": 3
+        },
+        "se": {
+          "pontuacao": 51,
+          "variacao": 27
+        },
+        "sp": {
+          "pontuacao": 30,
+          "variacao": 0
+        },
+        "to": {
+          "pontuacao": 57,
+          "variacao": -1
+      }
+    }
+  }
   }
