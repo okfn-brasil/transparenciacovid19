@@ -228,7 +228,7 @@
     }
   },
 
-   "3":{
+     "3":{
       "dia":13,
       "mes":8,
       "ano":2020,
@@ -342,7 +342,7 @@
     }
   },
 
-   "4":{
+     "4":{
       "dia":27,
       "mes":8,
       "ano":2020,
@@ -456,7 +456,7 @@
     }
   },
 
-   "5":{
+     "5":{
       "dia":11,
       "mes":9,
       "ano":2020,
@@ -569,11 +569,11 @@
       }
     }
   },
-   "6":{
-      "dia":22,
+     "6":{
+      "dia":16,
       "mes":10,
       "ano":2020,
-      "periodo":"22out - 10dez",
+      "periodo":"16out - 26nov",
 
       "capitais":{
         "ac": {
@@ -687,7 +687,7 @@
       "dia":11,
       "mes":12,
       "ano":2020,
-      "periodo":"11dez- 16dez",
+      "periodo":"27nov- 16dez",
 
       "capitais":{
         "ac": {
@@ -795,122 +795,5 @@
           "variacao": -1
       }
     }
-  },
-
-    "8":{
-      "dia":17,
-      "mes":12,
-      "ano":2020,
-      "periodo":"16dez- 31dez",
-
-      "capitais":{
-        "ac": {
-          "pontuacao": 15,
-          "variacao": 0
-        },
-        "al": {
-          "pontuacao": 88,
-          "variacao": 2
-        },
-        "am": {
-          "pontuacao": 100,
-          "variacao": 0
-        },
-        "ap": {
-          "pontuacao": 64,
-          "variacao": -36
-        },
-        "ba": {
-          "pontuacao": 84,
-          "variacao": 0
-        },        
-        "ce": {
-          "pontuacao": 99,
-          "variacao": 0
-        },
-        "es": {
-          "pontuacao": 89,
-          "variacao": 89
-        },
-        "go": {
-          "pontuacao": 31,
-          "variacao": 0
-        },
-        "ma": {
-          "pontuacao": 25,
-          "variacao": 0
-        },
-        "mg": {
-          "pontuacao": 60,
-          "variacao": 0
-        },
-        "ms": {
-          "pontuacao": 31,
-          "variacao": 0
-        },
-        "mt": {
-          "pontuacao": 52,
-          "variacao": 1
-        },
-        "pa": {
-          "pontuacao": 58,
-          "variacao": 0
-        },
-        "pb": {
-          "pontuacao": 97,
-          "variacao": 7
-        },
-        "pe": {
-          "pontuacao": 51,
-          "variacao": 1
-        },
-        "pi": {
-          "pontuacao": 50,
-          "variacao": 0
-        },
-        "pr": {
-          "pontuacao": 69,
-          "variacao": -3
-        },
-        "rj": {
-          "pontuacao": 67,
-          "variacao": 0
-        },
-        "rn": {
-          "pontuacao": 94,
-          "variacao": 6
-        },
-        "ro": {
-          "pontuacao": 55,
-          "variacao": 0
-        },
-        "rr": {
-          "pontuacao": 44,
-          "variacao": -5
-        },
-        "rs": {
-          "pontuacao": 95,
-          "variacao": 0
-        },
-        "sc": {
-          "pontuacao": 81,
-          "variacao": 0
-        },
-        "se": {
-          "pontuacao": 51,
-          "variacao": 0
-        },
-        "sp": {
-          "pontuacao": 30,
-          "variacao": 0
-        },
-        "to": {
-          "pontuacao": 57,
-          "variacao": 0
-      }
-    }
   }
-      }
-    
-  
-  
+  }
