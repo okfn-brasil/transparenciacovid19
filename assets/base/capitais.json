@@ -1,9 +1,9 @@
 {
     "1":{
-      "dia":16,
+      "dia":17,
       "mes":7,
       "ano":2020,
-      "periodo":"16jul - 29jul",
+      "periodo":"17jul - 29jul",
 
       "capitais":{
         "ac": {
@@ -118,7 +118,7 @@
       "dia":30,
       "mes":7,
       "ano":2020,
-      "periodo":"30jul - 12ago",
+      "periodo":"30jul - 13ago",
 
       "capitais":{
         "ac": {
@@ -229,10 +229,10 @@
   },
 
    "3":{
-      "dia":13,
+      "dia":14,
       "mes":8,
       "ano":2020,
-      "periodo":"13ago - 26ago",
+      "periodo":"14ago - 27ago",
 
       "capitais":{
         "ac": {
@@ -343,10 +343,10 @@
   },
 
    "4":{
-      "dia":27,
+      "dia":28,
       "mes":8,
       "ano":2020,
-      "periodo":"27ago - 9set",
+      "periodo":"28ago - 10set",
 
       "capitais":{
         "ac": {
@@ -460,7 +460,7 @@
       "dia":11,
       "mes":9,
       "ano":2020,
-      "periodo":"28ago - 14out",
+      "periodo":"11set - 21out",
 
       "capitais":{
         "ac": {
@@ -573,7 +573,7 @@
       "dia":22,
       "mes":10,
       "ano":2020,
-      "periodo":"22out - 10dez",
+      "periodo":"22out - 29nov",
 
       "capitais":{
         "ac": {
@@ -684,10 +684,10 @@
   },
 
     "7":{
-      "dia":11,
-      "mes":12,
+      "dia":30,
+      "mes":11,
       "ano":2020,
-      "periodo":"11dez- 16dez",
+      "periodo":"30nov - 17dez",
 
       "capitais":{
         "ac": {
@@ -798,10 +798,10 @@
   },
 
     "8":{
-      "dia":17,
+      "dia":18,
       "mes":12,
       "ano":2020,
-      "periodo":"16dez- 31dez",
+      "periodo":"18dez- 31dez",
 
       "capitais":{
         "ac": {

@@ -1,9 +1,9 @@
 { 
     "1":{
-      "dia":9,
+      "dia":10,
       "mes":7,
       "ano":2020,
-      "periodo":"09jul - 22jul",
+      "periodo":"10jul - 23jul",
 
       "estados":{
         "ac": {
@@ -122,10 +122,10 @@
   },
 
     "2":{
-      "dia":23,
+      "dia":24,
       "mes":7,
       "ano":2020,
-      "periodo":"23jul - 05ago",
+      "periodo":"24jul - 5ago",
 
       "estados":{
         "ac": {
@@ -248,7 +248,7 @@
       "dia":6,
       "mes":8,
       "ano":2020,
-      "periodo":"06ago - 20ago",
+      "periodo":"6ago - 20ago",
 
       "estados":{
         "ac": {
@@ -370,7 +370,7 @@
       "dia":21,
       "mes":8,
       "ano":2020,
-      "periodo":"21ago - 8set",
+      "periodo":"21ago - 7set",
 
       "estados":{
         "ac": {
@@ -489,10 +489,10 @@
   },
 
     "5":{
-      "dia":9,
+      "dia":8,
       "mes":9,
       "ano":2020,
-      "periodo":"9set - 06out",
+      "periodo":"8set - 6out",
 
       "estados":{
         "ac": {
@@ -612,9 +612,9 @@
 
     "6":{
       "dia":7,
-      "mes":9,
+      "mes":10,
       "ano":2020,
-      "periodo":"7out- 26nov",
+      "periodo":"7out- 29nov",
 
       "estados":{
         "ac": {
@@ -733,10 +733,10 @@
   },
 
     "7":{
-      "dia":27,
+      "dia":30,
       "mes":11,
       "ano":2020,
-      "periodo":"27nov - 17dez",
+      "periodo":"30nov - 17dez",
 
       "estados":{
         "ac": {
@@ -856,10 +856,10 @@
 
 
     "8":{
-      "dia":17,
+      "dia":18,
       "mes":12,
       "ano":2020,
-      "periodo":"17dez - 31dez",
+      "periodo":"18dez - 31dez",
 
       "estados":{
         "ac": {
