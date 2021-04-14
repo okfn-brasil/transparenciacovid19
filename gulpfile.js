@@ -23,5 +23,17 @@ gulp.task( 'default', gulp.series(function(done) {
     .pipe( uglify() )
     .pipe( gulp.dest( themePath + '/build' ) );
   });
+  gulp.watch( themePath + '/src/scripts/**/*.js').on('change', function(path, stats) {
+    gulp.src( [themePath + '/src/scripts/indice/*.js'] )
+    .pipe( concat( 'indice.js' ) )
+    .pipe( uglify() )
+    .pipe( gulp.dest( themePath + '/build' ) );
+  });
+  gulp.watch( themePath + '/src/scripts/**/*.js').on('change', function(path, stats) {
+    gulp.src( [themePath + '/src/scripts/leitos/*.js'] )
+    .pipe( concat( 'leitos.js' ) )
+    .pipe( uglify() )
+    .pipe( gulp.dest( themePath + '/build' ) );
+  });
   done();
 }));
