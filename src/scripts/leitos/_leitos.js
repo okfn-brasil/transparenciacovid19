@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
       $('.switch input').removeClass('ativo');
       $(this).addClass('ativo');
       val = $(this).val();
-      $('.' + val + '-wrap').show().siblings().hide();
+      $('.' + val + '-leitos-wrap').show().siblings().hide();
     }
   });
 
@@ -189,20 +189,21 @@ var app = {
   instancia: "estados",
   carregar: function() {
     $.getJSON('./assets/base/' + app.instancia + '.json', function(data) {
+      console.log(data);
       app.dados = data;
     }).done(function() {
       app.seletores();
     })
   },
   seletores: function() {
-    $('.lista-avaliacoes').empty();
-    app.instancia == "estados" ? $('.proxavaliacao').html(proxAvaliacaoEstados) : $('.proxavaliacao').html(proxAvaliacaoCapitais);
-    $.each(app.dados, function(i, s) {
-      app.avaliacao = i;
-      seletor = '<label><input type="radio" name="avaliacao" value="' + i + '" onChange="mudarAvaliacao($(this).val());"><div><div class="abreviacao"><p><strong>' + s.dia + '</strong> ' + mesesAb[s.mes] + '</p></div><div class="completo"><p><strong>' + s.dia + ' ' + meses[s.mes] + '</strong> ' + s.ano + '</p><p>Período de <strong>' + s.periodo + '</strong></p></div></div></label>';
-      $('.lista-avaliacoes').prepend(seletor);
-    });
-    $('.lista-avaliacoes').find('[value=' + app.avaliacao + ']').prop('checked', true);
+    // $('.lista-avaliacoes').empty();
+    // app.instancia == "estados" ? $('.proxavaliacao').html(proxAvaliacaoEstados) : $('.proxavaliacao').html(proxAvaliacaoCapitais);
+    // $.each(app.dados, function(i, s) {
+    //   app.avaliacao = i;
+    //   seletor = '<label><input type="radio" name="avaliacao" value="' + i + '" onChange="mudarAvaliacao($(this).val());"><div><div class="abreviacao"><p><strong>' + s.dia + '</strong> ' + mesesAb[s.mes] + '</p></div><div class="completo"><p><strong>' + s.dia + ' ' + meses[s.mes] + '</strong> ' + s.ano + '</p><p>Período de <strong>' + s.periodo + '</strong></p></div></div></label>';
+    //   $('.lista-avaliacoes').prepend(seletor);
+    // });
+    // $('.lista-avaliacoes').find('[value=' + app.avaliacao + ']').prop('checked', true);
     app.montarGraficos();
   },
   montarGraficos: function() {
@@ -215,6 +216,7 @@ var app = {
     app.posicoes = [];
     $('.gf').remove();
     $('.gfmobile').remove();
+    setTableHeader(app.instancia)
     $.each(dados, function(e, d) {
       if (app.instancia == "estados") {
         path += '<path data-tooltip data-estado="' + nomes[e] + '" data-uf="' + e + '" data-pontuacao="' + d.pontuacao + '" data-nivel="' + nivelar(d.pontuacao) + '" d="' + coordenadas[e] + '" />';
@@ -225,7 +227,7 @@ var app = {
         }
       } else {
         path += '<path data-tooltip data-estado="' + nomes[e] + '" data-uf="' + e + '" data-pontuacao="' + d.pontuacao + '" data-nivel="' + nivelar(d.pontuacao) + '" d="' + coordenadas[e] + '" />';
-        circle += '<circle id="tip_' + e + '" data-tooltip data-estado="' + nomes[e] + '" data-uf="' + e + '" data-pontuacao="' + d.pontuacao + '" data-nivel="' + nivelar(d.pontuacao) + '" ' + coordenadasCapital[e] + '" r="5" />';
+        // circle += '<circle id="tip_' + e + '" data-tooltip data-estado="' + nomes[e] + '" data-uf="' + e + '" data-pontuacao="' + d.pontuacao + '" data-nivel="' + nivelar(d.pontuacao) + '" ' + coordenadasCapital[e] + '" r="5" />';
       }
       ranking.push({
         uf: e,
@@ -236,17 +238,23 @@ var app = {
     });
 
     // Ranking //
+    var sortOrder;
+    if (app.instancia === 'estados') {
+      sortOrder = 1;
+    } else if (app.instancia === 'capitais') {
+      sortOrder = -1;
+    }
     ranking.sort(function(a, b) {
       if (a.pontuacao < b.pontuacao) {
-        return 1;
+        return 1 * sortOrder;
       }
       if (a.pontuacao > b.pontuacao) {
-        return -1;
+        return -1 * sortOrder;
       }
       return 0;
     });
     app.posicoes.sort(function(a, b) {
-      return b - a
+      return (b - a) * sortOrder;
     });
 
     // Mapa //
@@ -259,18 +267,18 @@ var app = {
     }
 
     tabela = "";
-    grafico = "";
+    // grafico = "";
     $.each(ranking, function(i, d) {
       posicao = app.posicoes.indexOf(d.pontuacao) + 1;
       status = d.variacao > 0 ? "positivo" : d.variacao < 0 ? "negativo" : "estavel";
       pInicial = status == "positivo" ? d.pontuacao - Math.abs(d.variacao) : d.pontuacao + Math.abs(d.variacao);
       pBarra = status == "positivo" ? pInicial : d.pontuacao;
       estadoUF = (d.uf == 'br') ? ('<em>' + nomes[d.uf] + '<em>') : (nomes[d.uf] + ' (<span class="uc">' + d.uf + '</span>)');
-      tabela += '<tr data-uf="' + d.uf + '" data-nivel="' + nivelar(d.pontuacao) + '"><td><strong>' + posicao + 'º</strong> ' + estadoUF + '</td><td>' + d.pontuacao + '</td><td><span class="' + status + '">' + d.variacao + '</span></td><td><span class="nivel ' + nivelar(d.pontuacao) + '"></span></td></tr>';
-      grafico += '<tr data-uf="' + d.uf + '" data-nivel="' + nivelar(d.pontuacao) + '"><td><strong>' + posicao + 'º</strong> ' + estadoUF + '</td><td></td><td></td><td></td><td></td><td></td><td class="barra"><div class="variacao ' + status + '" style="left: ' + pBarra + '%;width:' + Math.abs(d.variacao) + '%"><span>' + d.variacao + '</span><div class="valor">' + d.pontuacao + '</div></div><div class="inicio ' + status + '" style="left: ' + pInicial + '%;"></div><div class="fim" data-nivel="' + nivelar(d.pontuacao) + '" style="left: ' + d.pontuacao + '%;"></div></td></tr>'
+      tabela += '<tr data-uf="' + d.uf + '" data-nivel="' + nivelar(d.pontuacao) + '"><td><strong>' + posicao + 'º</strong> ' + estadoUF + '</td><td>' + d.pontuacao + '</td><td><span class="nivel ' + nivelar(d.pontuacao) + '"></span></td></tr>';
+      // grafico += '<tr data-uf="' + d.uf + '" data-nivel="' + nivelar(d.pontuacao) + '"><td><strong>' + posicao + 'º</strong> ' + estadoUF + '</td><td></td><td></td><td></td><td></td><td></td><td class="barra"><div class="variacao ' + status + '" style="left: ' + pBarra + '%;width:' + Math.abs(d.variacao) + '%"><span>' + d.variacao + '</span><div class="valor">' + d.pontuacao + '</div></div><div class="inicio ' + status + '" style="left: ' + pInicial + '%;"></div><div class="fim" data-nivel="' + nivelar(d.pontuacao) + '" style="left: ' + d.pontuacao + '%;"></div></td></tr>'
     });
-    $('.tabela tbody').html(tabela);
-    $('.grafico-barra tbody').html(grafico);
+    $('.tabela-leitos tbody').html(tabela);
+    // $('.grafico-barra tbody').html(grafico);
     destacar();
     destacarNivel();
     chamarTooltip();
@@ -395,15 +403,27 @@ function chamarTooltip() {
   }).on("mouseleave", function(e) {
     tooltip.removeClass('ativo');
   }).mousemove(function(e) {
-    if (app.instancia == 'capitais') {
-      positionTooltip2($("#tip_" + $(this).data('uf')), e);
-    } else {
+    // if (app.instancia == 'capitais') {
+      // positionTooltip2($("#tip_" + $(this).data('uf')), e);
+    // } else {
       positionTooltip(e);
-    }
+    // }
   });
 
   tooltip.on('click', function(e) {
     e.stopPropagation()
     tooltip.removeClass('ativo');
   })
+}
+
+function setTableHeader(instancia) {
+  var score = $('#thead-score');
+  var pill = $('#thead-pill');
+  if (instancia === 'estados') {
+    score.html('Pontuação')
+    pill.html('Nível de Confiabilidade')
+  } else if (instancia === 'capitais') {
+    score.html('% ocupado')
+    pill.html('Nível de Confiabilidade')
+  }
 }

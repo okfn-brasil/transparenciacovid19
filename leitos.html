@@ -9,28 +9,28 @@ title:
       <section class="col-xs-12">
 
         <!-- Switch Estado / Capital-->
-        <div class="switch grande">
+        <!-- <div class="switch grande">
           <label>
             <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
-            <p><span>Estados</span></p>
+            <p><span>Confiabilidade</span></p>
           </label>
           <label>
             <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
-            <p><span>Capitais</span></p>
+            <p><span>Taxa de Ocupação</span></p>
           </label>
-        </div>
+        </div> -->
 
-        <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> da Covid-19</h3>
+        <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> dos leitos</h3>
 
         <!-- Próxima Avaliação-->
-        <p class="t2 uc tcc w400 mb2 ff2">Faremos uma pausa nas avaliações regulares para analisar os próximos passos. Voltamos em breve! <span class="proxavaliacao"></span></p>
+        <p class="t2 uc tcc w400 mb2 ff2">Veja como está a transparência sobre os dados de leitos</p>
 
       </section>
 
       <!-- Lista de Avaliações -->
-      <section class="col-xs-12">
+      <!-- <section class="col-xs-12">
         <div class="lista-avaliacoes"></div>
-      </section>
+      </section> -->
     </div>
 
     <div class="row mt2">
@@ -38,7 +38,7 @@ title:
       <!-- Mapa -->
       <section class="col-xs-12 col-md-6">
         <h4 class="t4 tcp w600 ff1" id="titulo-estados">Avaliação por estado da federação</h4>
-        <h4 class="t4 tcp w600 ff1" id="titulo-capitais" style="display: none;">Avaliação por capital da federação</h4>
+        <!-- <h4 class="t4 tcp w600 ff1" id="titulo-capitais" style="display: none;">Avaliação por capital da federação</h4> -->
 
         <div class="grafico-mapa">
           <!-- SVG -->
@@ -71,36 +71,37 @@ title:
       </section>
       <section class="col-xs-12 col-md-6 mt3 mt0-md">
         <div class="row mb2">
-          <div class="col-xs-12 flex between-xs">
+          <div class="col-xs-12 flex between-xs mb2">
             <h4 class="t4 tcp w600 ff1">Ranking</h4>
+          </div>
+          <div class="col-xs-12 flex between-xs">
             <div class="switch">
               <label>
-                <input type="radio" name="ranking" value="tabela" checked>
-                <p><span>Tabela</span></p>
+                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
+                <p style="height: 100%;"><span>Confiabilidade</span></p>
               </label>
               <label>
-                <input type="radio" name="ranking" value="grafico">
-                <p><span>Gráfico</span></p>
+                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
+                <p style="height: 100%;"><span>Taxa de Ocupação</span></p>
               </label>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12">
-            <div class="tabela-wrap">
-              <table class="tabela">
+            <div class="tabela-leitos-wrap">
+              <table class="tabela-leitos">
                 <thead>
                   <tr>
                     <th>Estado</th>
-                    <th>Pontuação</th>
-                    <th>Variação</th>
-                    <th>Nível</th>
+                    <th id="thead-score">Pontuação</th>
+                    <th id="thead-pill">Nível</th>
                   </tr>
                 </thead>
                 <tbody></tbody>
               </table>
             </div>
-            <div class="grafico-wrap">
+            <!-- <div class="grafico-wrap">
               <table class="grafico-barra">
                 <thead>
                   <tr>
@@ -114,7 +115,7 @@ title:
                 </thead>
                 <tbody></tbody>
               </table>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -197,21 +198,18 @@ title:
 
 <script>
   function hideEstados() {
-    var e = document.getElementById("titulo-estados");
-    var f = document.getElementById("titulo-capitais");
-    e.style.display = 'none';
-    f.style.display = 'inline'
+    // var e = document.getElementById("titulo-estados");
+    // var f = document.getElementById("titulo-capitais");
+    // e.style.display = 'none';
+    // f.style.display = 'inline'
   }
 
   function hideCapitais() {
-    var e = document.getElementById("titulo-capitais");
-    var f = document.getElementById("titulo-estados");
-    e.style.display = 'none';
-    f.style.display = 'inline'
+    // var e = document.getElementById("titulo-capitais");
+    // var f = document.getElementById("titulo-estados");
+    // e.style.display = 'none';
+    // f.style.display = 'inline'
   }
 </script>
-<script>
-  proxAvaliacaoEstados = "";
-  proxAvaliacaoCapitais = "";
-</script>
-<script src="./build/indice.js"></script>
+
+<script src="./build/leitos.js"></script>
