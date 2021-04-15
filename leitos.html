@@ -7,34 +7,12 @@ title:
   <div class="container-fluid wrap mt2">
     <div class="row">
       <section class="col-xs-12">
-
-        <!-- Switch Estado / Capital-->
-        <!-- <div class="switch grande">
-          <label>
-            <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
-            <p><span>Confiabilidade</span></p>
-          </label>
-          <label>
-            <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
-            <p><span>Taxa de Ocupação</span></p>
-          </label>
-        </div> -->
-
         <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> dos leitos</h3>
-
-        <!-- Próxima Avaliação-->
         <p class="t2 uc tcc w400 mb2 ff2">Veja como está a transparência sobre os dados de leitos</p>
-
       </section>
-
-      <!-- Lista de Avaliações -->
-      <!-- <section class="col-xs-12">
-        <div class="lista-avaliacoes"></div>
-      </section> -->
     </div>
 
     <div class="row mt2">
-
       <!-- Mapa -->
       <section class="col-xs-12 col-md-6">
         <h4 class="t4 tcp w600 ff1" id="titulo-estados">Avaliação por estado da federação</h4>
@@ -77,11 +55,11 @@ title:
           <div class="col-xs-12 flex between-xs">
             <div class="switch">
               <label>
-                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
+                <input type="radio" name="instancia" value="confiabilidade" checked>
                 <p style="height: 100%;"><span>Confiabilidade</span></p>
               </label>
               <label>
-                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
+                <input type="radio" name="instancia" value="ocupacao">
                 <p style="height: 100%;"><span>Taxa de Ocupação</span></p>
               </label>
             </div>
@@ -101,21 +79,6 @@ title:
                 <tbody></tbody>
               </table>
             </div>
-            <!-- <div class="grafico-wrap">
-              <table class="grafico-barra">
-                <thead>
-                  <tr>
-                    <th>Estado</th>
-                    <th>Opaco</th>
-                    <th>Baixo</th>
-                    <th>Médio</th>
-                    <th>Bom</th>
-                    <th>Alto</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div> -->
           </div>
         </div>
       </section>
