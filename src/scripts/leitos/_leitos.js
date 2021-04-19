@@ -220,12 +220,23 @@ var app = {
     $.each(ranking, function(i, d) {
       const posicao = app.posicoes.indexOf(d.pontuacao) + 1;
       const estadoUF = (d.uf == 'br') ? ('<em>' + nomesEstados[d.uf] + '<em>') : (nomesEstados[d.uf] + ' (<span class="uc">' + d.uf + '</span>)');
-      tabela += `
-      <tr data-uf="${d.uf}" data-nivel="${nivelar(d.pontuacao)}">
-        <td><strong>${posicao}º</strong> ${estadoUF}</td>
-        <td>${d.pontuacao}${app.instancia === occupationKey ? "%" : ""}</td>
-        <td><span class="nivel ${nivelar(d.pontuacao)}"></span></td>
-      </tr>`
+      if (app.instancia === reliabilityKey) {
+        tabela += `
+        <tr class="two-metrics" data-uf="${d.uf}" data-nivel="${nivelar(d.pontuacao)}">
+          <td><strong>${posicao}º</strong> ${estadoUF}</td>
+          <td>${d.pontuacao}${app.instancia === occupationKey ? "%" : ""}</td>
+          <td><span class="nivel ${nivelar(d.pontuacao)}"></span></td>
+        </tr>`
+      } else if (app.instancia === occupationKey) {
+        tabela += `
+        <tr class="three-metrics" data-uf="${d.uf}" data-nivel="${nivelar(d.pontuacao)}">
+          <td><strong>${posicao}º</strong> ${estadoUF}</td>
+          <td>${d.pontuacao}${app.instancia === occupationKey ? "%" : ""}</td>
+          <td>${d.pontuacao}${app.instancia === occupationKey ? "%" : ""}</td>
+          <td><span class="nivel ${nivelar(d.pontuacao)}"></span></td>
+        </tr>`
+      }
+
     });
     $('.tabela-leitos tbody').html(tabela);
     destacar();
@@ -322,13 +333,19 @@ function chamarTooltip() {
 }
 
 function setTableHeader(instance) {
-  var score = $('#thead-score');
-  var pill = $('#thead-pill');
+  const th = $('#table-header');
   if (instance === reliabilityKey) {
-    score.html('Pontuação')
-    pill.html('Nível de Confiabilidade')
+    th.html(`<tr class="two-metrics">
+      <th>Estado</th>
+      <th>Pontuação</th>
+      <th>Nível de confiabilidade</th>
+    </tr>`)
   } else if (instance === occupationKey) {
-    score.html('% ocupado')
-    pill.html('Nível de Confiabilidade')
+    th.html(`<tr class="three-metrics">
+      <th>Estado</th>
+      <th>% UTI Covid</th>
+      <th>% UTI Não-Covid</th>
+      <th>Nível de confiabilidade</th>
+    </tr>`)
   }
 }

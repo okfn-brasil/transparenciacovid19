@@ -1,3 +1,6 @@
+bundle install
+bundle exec jekyll serve --livereload
+
 - Instalar as dependências:
 npm install
 

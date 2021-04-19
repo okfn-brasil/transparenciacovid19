@@ -7639,7 +7639,12 @@ var app = {
     $.each(ranking, function (i, d) {
       var posicao = app.posicoes.indexOf(d.pontuacao) + 1;
       var estadoUF = d.uf == 'br' ? '<em>' + nomesEstados[d.uf] + '<em>' : nomesEstados[d.uf] + ' (<span class="uc">' + d.uf + '</span>)';
-      tabela += "\n      <tr data-uf=\"".concat(d.uf, "\" data-nivel=\"").concat(nivelar(d.pontuacao), "\">\n        <td><strong>").concat(posicao, "\xBA</strong> ").concat(estadoUF, "</td>\n        <td>").concat(d.pontuacao).concat(app.instancia === occupationKey ? "%" : "", "</td>\n        <td><span class=\"nivel ").concat(nivelar(d.pontuacao), "\"></span></td>\n      </tr>");
+
+      if (app.instancia === reliabilityKey) {
+        tabela += "\n        <tr class=\"two-metrics\" data-uf=\"".concat(d.uf, "\" data-nivel=\"").concat(nivelar(d.pontuacao), "\">\n          <td><strong>").concat(posicao, "\xBA</strong> ").concat(estadoUF, "</td>\n          <td>").concat(d.pontuacao).concat(app.instancia === occupationKey ? "%" : "", "</td>\n          <td><span class=\"nivel ").concat(nivelar(d.pontuacao), "\"></span></td>\n        </tr>");
+      } else if (app.instancia === occupationKey) {
+        tabela += "\n        <tr class=\"three-metrics\" data-uf=\"".concat(d.uf, "\" data-nivel=\"").concat(nivelar(d.pontuacao), "\">\n          <td><strong>").concat(posicao, "\xBA</strong> ").concat(estadoUF, "</td>\n          <td>").concat(d.pontuacao).concat(app.instancia === occupationKey ? "%" : "", "</td>\n          <td>").concat(d.pontuacao).concat(app.instancia === occupationKey ? "%" : "", "</td>\n          <td><span class=\"nivel ").concat(nivelar(d.pontuacao), "\"></span></td>\n        </tr>");
+      }
     });
     $('.tabela-leitos tbody').html(tabela);
     destacar();
@@ -7734,14 +7739,11 @@ function chamarTooltip() {
 }
 
 function setTableHeader(instance) {
-  var score = $('#thead-score');
-  var pill = $('#thead-pill');
+  var th = $('#table-header');
 
   if (instance === reliabilityKey) {
-    score.html('Pontuação');
-    pill.html('Nível de Confiabilidade');
+    th.html("<tr class=\"two-metrics\">\n      <th>Estado</th>\n      <th>Pontua\xE7\xE3o</th>\n      <th>N\xEDvel de confiabilidade</th>\n    </tr>");
   } else if (instance === occupationKey) {
-    score.html('% ocupado');
-    pill.html('Nível de Confiabilidade');
+    th.html("<tr class=\"three-metrics\">\n      <th>Estado</th>\n      <th>% UTI Covid</th>\n      <th>% UTI N\xE3o-Covid</th>\n      <th>N\xEDvel de confiabilidade</th>\n    </tr>");
   }
 }

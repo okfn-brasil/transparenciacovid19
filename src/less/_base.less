@@ -27,6 +27,8 @@
 /* Framework */
 	@import "./tapronto.less";
 
+	@import "./leitos.less";
+
 /* Estrutura */
 	html{font-size: 16px;}
 	body{font-size: 16px;.ff2;.w400;}
@@ -784,150 +786,6 @@
 				}
 				tr{
 					grid-template-columns: 250px 1fr 1fr 1fr;
-					height: 40px;
-				}
-			}
-		}
-
-	// Tabela leitos //
-		.tabela-leitos-wrap{
-			max-width: 100%;
-			max-height: calc(100vh - 10rem);
-			overflow: auto;
-			@media only screen and (min-width: 48em) {
-				overflow: initial;
-				max-height: none;
-			}
-		}
-
-		.tabela-leitos{
-			width: 100%;
-			min-width: 480px;
-			.relative;
-			thead, tbody, tr{
-				display: grid;
-			}
-			thead{
-				position: sticky;
-				top: 0px;
-				border-bottom: 1px solid @cinza;
-				padding-bottom: 1em;
-				background: #fff;
-				.z2;
-				th{
-					.tcc;
-					.uc;
-					.t2;
-					.ff3;
-					.tl;
-					.w400;
-				}
-			}
-			tbody{
-				.mt1;
-				tr{
-					cursor: pointer;
-					border-width: 1px 0px 1px 0px;
-					border-style: solid;
-					border-color: transparent;
-				}
-				&:hover{
-					tr{
-						opacity: .3;
-						&:hover{
-							opacity: 1;
-							border-color: @preto;
-						}
-					}
-				}
-				&.interacao{
-					tr{
-						opacity: .3;
-						&.ativo{
-							opacity: 1;
-							border-color: @preto;
-						}
-					}
-				}
-			}
-			tr{
-				grid-template-columns: 200px 1fr 1fr 1fr;
-				height: 35px;
-				.transition;
-				&:nth-child(even){
-					.bgo;
-				}
-				&:nth-child(odd){
-					.bgb;
-				}
-				td, th{
-					&:nth-child(2){
-						.tr;
-					}
-				}
-				td{
-					&:nth-child(2){
-						.w700;
-					}
-				}
-			}
-			td, th{
-				.t3;
-				.p05;
-				.pl1;
-				.pr1;
-			}
-
-			.positivo, .negativo, .estavel{
-				padding-left: 1.2rem;
-				&:after{
-					content: "";
-					.absolute;
-					left: .5rem;
-					top: 50%;
-					height: 12px;
-					width: 7px;
-					background-size: contain;
-					background-position: center center;
-					background-repeat: no-repeat;
-					transform: translate(0%, -50%);
-				}
-			}
-
-			.positivo{
-				&:before{
-					content: "+";
-				}
-				&:after{
-					background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12"><polyline points="3.5 11.5 3.5 3.6 3.5 0.5 6.5 3.5 3.5 0.5 0.5 3.5" fill="none" stroke="%2300cb8d" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-				}
-			}
-			.negativo{
-				&:after{
-					background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 12"><polyline points="3.5 0.5 3.5 8.4 3.5 11.5 0.5 8.5 3.5 11.5 6.5 8.5" fill="none" stroke="%23d01c8b" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-				}
-			}
-			.estavel{
-				&:before{
-					content: "";
-					margin-left: 5px;
-				}
-				&:after{
-					height: 11px;
-					width: 11px;
-					background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11"><circle cx="5.5" cy="5.5" r="5" fill="none" stroke="%23b8b6b0" stroke-linecap="round" stroke-linejoin="round"/><line x1="3.5" y1="5.5" x2="7.5" y2="5.5" fill="none" stroke="%23b8b6b0" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-				}
-			}
-			@media only screen and (min-width: 48em) {
-				thead{
-					top: 0px;
-					.transition;
-					.scrollup &{
-						top: 70px;
-					}
-				}
-				tr{
-					grid-template-columns: 250px 1fr 1fr;
 					height: 40px;
 				}
 			}
