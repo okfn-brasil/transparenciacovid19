@@ -52,7 +52,7 @@ function init(allData, region) {
         <div class="pill">
           <h5>Painel atualizado em</h5>
           <h4 class="t5">${moment(allData.ts_run).format('DD/MM/YYYY ')}</h4>
-          <h6 class="t3">Às ${moment(allData.ts_run).format('hh:mm:ss')}</h6>
+          <h6 class="t3">Às ${moment(allData.ts_run).format('HH:mm:ss')}</h6>
         </div>
       </div>
     </div>
