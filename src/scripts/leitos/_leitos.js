@@ -82,22 +82,17 @@ function init(allData, region) {
       </div>
     </div>
 
-    <!-- Taxa de ocupação -->
+    <!-- Problemas taxa de ocupação -->
     <div class="row mt4">
       <div class="col-xs-12">
-        <h2 class="t6 bb">Taxa de ocupação de UTIs</h2>
+        <h2 class="t6 bb">Problemas de qualidade nas taxas de ocupação de UTIs</h2>
       </div>
     </div>
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Estabelecimentos com problemas na taxa de ocupação (acima de 120%)*</h5>
         ${gaugeChart(latest.pct_uti_ocup_gt120, valueChange(latest, previous, 'pct_uti_ocup_gt120', false))}
-        <p class="mt3">*Percentual de estabelecimentos que possuem taxas de ocupação de UTI acima de 120%, indicando problema na qualidade dos dados</p>
-      </div>
-      <div class="col-sm-6 col-xs-12 mt1">
-        <h5>Taxa de ocupação atual</h5>
-        <h4 class="t5">${(latest.tx_ocup_srag_uti * 100).toLocaleString("pt-BR", {maximumFractionDigits: 0})}% ${valueChange(latest, previous, 'tx_ocup_srag_uti', false)} (Covid)</h4>
-        <h4 class="t5">${(latest.tx_ocup_hosp_uti * 100).toLocaleString("pt-BR", {maximumFractionDigits: 0})}% ${valueChange(latest, previous, 'tx_ocup_hosp_uti', false)} (Não-Covid)</h4>
+        <p class="mt3 mb0">*Percentual de estabelecimentos que possuem taxas de ocupação de UTI acima de 120%, indicando problemas na qualidade dos dados</p>
       </div>
     </div>
     <div class="row mt3">
@@ -106,6 +101,20 @@ function init(allData, region) {
         <div style="height: 300px;">
           <canvas id="occupationWithProblems"></canvas>
         </div>
+      </div>
+    </div>
+
+    <!-- Taxa de ocupação -->
+    <div class="row mt4">
+      <div class="col-xs-12">
+        <h2 class="t6 bb">Taxa de ocupação de UTIs</h2>
+      </div>
+    </div>
+    <div class="row mt1">
+      <div class="col-sm-6 col-xs-12 mt1">
+        <h5>Taxa de ocupação atual</h5>
+        <h4 class="t5">${(latest.tx_ocup_srag_uti * 100).toLocaleString("pt-BR", {maximumFractionDigits: 0})}% ${valueChange(latest, previous, 'tx_ocup_srag_uti', false)} (Covid)</h4>
+        <h4 class="t5">${(latest.tx_ocup_hosp_uti * 100).toLocaleString("pt-BR", {maximumFractionDigits: 0})}% ${valueChange(latest, previous, 'tx_ocup_hosp_uti', false)} (Não-Covid)</h4>
       </div>
     </div>
     <div class="row mt3">
