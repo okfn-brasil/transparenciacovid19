@@ -7457,6 +7457,8 @@ var attempts = 0;
 var success = false;
 var maxAttempts = 3;
 var dataUrl = "https://leitos-hospitalares.s3.amazonaws.com/metrics_by_region_latest.json";
+var okPink = "#d01c8b";
+var okGreen = "#00cb8d";
 document.addEventListener("DOMContentLoaded", function () {
   getDataAndInit();
 });
@@ -7484,17 +7486,13 @@ function init(allData, region) {
   var data = allData.data[region];
   var latest = data[0];
   var previous = data[1];
-  app.html("\n    <!-- Select regi\xF5es -->\n    ".concat(generateSelect(region), "\n\n    <!-- Dados gerais -->\n    <div class=\"row\">\n      <div class=\"col-xs-12\">\n        <!-- <h2 class=\"t6 bb\">Dados gerais - ").concat(latest.region, "</h2> -->\n        <h2 class=\"t6 bb\">Dados gerais</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Total de estabelecimentos hospitalares</h5>\n        <h4 class=\"t5\">").concat(latest.total_hospitals.toLocaleString(), "</h4>\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Painel atualizado em</h5>\n        <h4 class=\"t5\">").concat(moment(allData.ts_run).format('DD/MM/YYYY hh:mm:ss'), "</h4>\n      </div>\n    </div>\n\n    <!-- Atualiza\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Atualiza\xE7\xE3o dos dados</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Estabelecimentos desatualizados h\xE1 7 dias ou mais</h5>\n        <!--\n        <h4 class=\"t5\">").concat((latest.pct_oudated_7d * 100).toLocaleString('pt-BR', {
+  app.html("\n    <!-- Select regi\xF5es -->\n    ".concat(generateSelect(region), "\n\n    <!-- Dados gerais -->\n    <div class=\"row\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Dados gerais</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Total de estabelecimentos hospitalares</h5>\n        <h4 class=\"t5\">").concat(Number(latest.total_hospitals).toLocaleString("pt-BR", {
     maximumFractionDigits: 0
-  }), "%</h4>\n        -->\n        ").concat(gaugeChart(latest.pct_oudated_7d, valueChange(latest, previous, 'pct_oudated_7d', false)), "\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Estabelecimentos desatualizados h\xE1 90 dias ou mais</h5>\n        <!--\n        <h4 class=\"t5\">").concat((latest.pct_oudated_90d * 100).toLocaleString('pt-BR', {
+  }), "</h4>\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <div class=\"pill\">\n          <h5>Painel atualizado em</h5>\n          <h4 class=\"t5\">").concat(moment(allData.ts_run).format('DD/MM/YYYY '), "</h4>\n          <h6 class=\"t3\">\xC0s ").concat(moment(allData.ts_run).format('HH:mm:ss'), "</h6>\n        </div>\n      </div>\n    </div>\n\n    <!-- Atualiza\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Atualiza\xE7\xE3o dos dados</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Estabelecimentos desatualizados h\xE1 7 dias ou mais</h5>\n        ").concat(gaugeChart(latest.pct_oudated_7d, valueChange(latest, previous, 'pct_oudated_7d', false)), "\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Estabelecimentos desatualizados h\xE1 90 dias ou mais</h5>\n        ").concat(gaugeChart(latest.pct_oudated_90d, valueChange(latest, previous, 'pct_oudated_90d', false)), "\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>Estabelecimentos desatualizados h\xE1 7 dias ou mais - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"pctOutdatedChart\"></canvas>\n        </div>\n      </div>\n    </div>\n\n    <!-- Problemas taxa de ocupa\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Problemas de qualidade nas taxas de ocupa\xE7\xE3o de UTIs</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Estabelecimentos com problemas na taxa de ocupa\xE7\xE3o (acima de 120%)*</h5>\n        ").concat(gaugeChart(latest.pct_uti_ocup_gt120, valueChange(latest, previous, 'pct_uti_ocup_gt120', false)), "\n        <p class=\"mt3 mb0\">*Percentual de estabelecimentos que possuem taxas de ocupa\xE7\xE3o de UTI acima de 120%, indicando problemas na qualidade dos dados</p>\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>Estabelecimentos com problemas na taxa de ocupa\xE7\xE3o - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"occupationWithProblems\"></canvas>\n        </div>\n      </div>\n    </div>\n\n    <!-- Taxa de ocupa\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Taxa de ocupa\xE7\xE3o de UTIs</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Taxa de ocupa\xE7\xE3o atual</h5>\n        <h4 class=\"t5\">").concat((latest.tx_ocup_srag_uti * 100).toLocaleString("pt-BR", {
     maximumFractionDigits: 0
-  }), "%</h4>\n        -->\n        ").concat(gaugeChart(latest.pct_oudated_90d, valueChange(latest, previous, 'pct_oudated_90d', false)), "\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>Estabelecimentos desatualizados h\xE1 7 dias ou mais - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"pctOutdatedChart\"></canvas>\n        </div>\n      </div>\n    </div>\n\n    <!-- Taxa de ocupa\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Taxa de ocupa\xE7\xE3o de UTIs</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Estabelecimentos com problemas na taxa de ocupa\xE7\xE3o (acima de 120%)</h5>\n        <!--\n        <h4 class=\"t5\">").concat((latest.pct_uti_ocup_gt120 * 100).toLocaleString('pt-BR', {
+  }), "% ").concat(valueChange(latest, previous, 'tx_ocup_srag_uti', false), " (Covid)</h4>\n        <h4 class=\"t5\">").concat((latest.tx_ocup_hosp_uti * 100).toLocaleString("pt-BR", {
     maximumFractionDigits: 0
-  }), "%</h4>\n        -->\n          ").concat(gaugeChart(latest.pct_uti_ocup_gt120, valueChange(latest, previous, 'pct_uti_ocup_gt120', false)), "\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Taxa de ocupa\xE7\xE3o atual</h5>\n        <h4 class=\"t5\">").concat((latest.tx_ocup_srag_uti * 100).toLocaleString('pt-BR', {
-    maximumFractionDigits: 0
-  }), "% ").concat(valueChange(latest, previous, 'tx_ocup_srag_uti', false), " (Covid)</h4>\n        <h4 class=\"t5\">").concat((latest.tx_ocup_hosp_uti * 100).toLocaleString('pt-BR', {
-    maximumFractionDigits: 0
-  }), "% ").concat(valueChange(latest, previous, 'tx_ocup_hosp_uti', false), " (N\xE3o-Covid)</h4>\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>Taxa de ocupa\xE7\xE3o UTIs - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"occupationRateChart\"></canvas>\n        </div>\n      </div>\n    </div>\n\n    <!-- Oferta e ocupa\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Oferta e ocupa\xE7\xE3o de leitos de UTI</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Leitos de UTI existentes</h5>\n        <h4 class=\"t5\">").concat(Math.round(latest.ocup_srag_uti).toLocaleString(), " (Covid)</h4>\n        <h4 class=\"t5\">").concat(Math.round(latest.ocup_hosp_uti).toLocaleString(), " (N\xE3o-Covid)</h4>\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Leitos de UTI ocupados</h5>\n        <h4 class=\"t5\">").concat(Math.round(latest.oferta_srag_uti).toLocaleString(), " (Covid)</h4>\n        <h4 class=\"t5\">").concat(Math.round(latest.oferta_hosp_uti).toLocaleString(), " (N\xE3o-Covid)</h4>\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>N\xFAmero de leitos de UTI - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"numberOfBeds\"></canvas>\n        </div>\n      </div>\n    </div>\n  "));
+  }), "% ").concat(valueChange(latest, previous, 'tx_ocup_hosp_uti', false), " (N\xE3o-Covid)</h4>\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>Taxa de ocupa\xE7\xE3o UTIs - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"occupationRateChart\"></canvas>\n        </div>\n      </div>\n    </div>\n\n    <!-- Oferta e ocupa\xE7\xE3o -->\n    <div class=\"row mt4\">\n      <div class=\"col-xs-12\">\n        <h2 class=\"t6 bb\">Oferta e ocupa\xE7\xE3o de leitos de UTI</h2>\n      </div>\n    </div>\n    <div class=\"row mt1\">\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Leitos de UTI existentes</h5>\n        <h4 class=\"t5\">").concat(Math.round(latest.ocup_srag_uti).toLocaleString("pt-BR"), " (Covid)</h4>\n        <h4 class=\"t5\">").concat(Math.round(latest.ocup_hosp_uti).toLocaleString("pt-BR"), " (N\xE3o-Covid)</h4>\n      </div>\n      <div class=\"col-sm-6 col-xs-12 mt1\">\n        <h5>Leitos de UTI ocupados</h5>\n        <h4 class=\"t5\">").concat(Math.round(latest.oferta_srag_uti).toLocaleString("pt-BR"), " (Covid)</h4>\n        <h4 class=\"t5\">").concat(Math.round(latest.oferta_hosp_uti).toLocaleString("pt-BR"), " (N\xE3o-Covid)</h4>\n      </div>\n    </div>\n    <div class=\"row mt3\">\n      <div class=\"col-xs-12\">\n        <h5>N\xFAmero de leitos de UTI - S\xE9rie hist\xF3rica</h5>\n        <div style=\"height: 300px;\">\n          <canvas id=\"numberOfBeds\"></canvas>\n        </div>\n      </div>\n    </div>\n  "));
   lineChart("pctOutdatedChart", data.map(function (a) {
     return moment(a.ts_run).format("DD/MM/YYYY");
   }).reverse(), [{
@@ -7503,9 +7501,28 @@ function init(allData, region) {
       return Math.round(a.pct_oudated_7d * 1000) / 10;
     }).reverse(),
     fill: false,
-    borderColor: "#00cb8d",
+    borderColor: okGreen,
     tension: 0.1
-  }]);
+  }, {
+    label: "% desatualizado há 90 dias ou mais",
+    data: data.map(function (a) {
+      return Math.round(a.pct_oudated_90d * 1000) / 10;
+    }).reverse(),
+    fill: false,
+    borderColor: okPink,
+    tension: 0.1
+  }], true);
+  lineChart("occupationWithProblems", data.map(function (a) {
+    return moment(a.ts_run).format("DD/MM/YYYY");
+  }).reverse(), [{
+    label: "% de estabelecimentos com problemas na taxa de ocupação",
+    data: data.map(function (a) {
+      return Math.round(a.pct_uti_ocup_gt120 * 1000) / 10;
+    }).reverse(),
+    fill: false,
+    borderColor: okPink,
+    tension: 0.1
+  }], true);
   lineChart("occupationRateChart", data.map(function (a) {
     return moment(a.ts_run).format("DD/MM/YYYY");
   }).reverse(), [{
@@ -7514,7 +7531,7 @@ function init(allData, region) {
       return Math.round(a.tx_ocup_srag_uti * 1000) / 10;
     }).reverse(),
     fill: false,
-    borderColor: "#00cb8d",
+    borderColor: okGreen,
     tension: 0.1
   }, {
     label: "% ocupação UTI Não-Covid",
@@ -7522,9 +7539,9 @@ function init(allData, region) {
       return Math.round(a.tx_ocup_hosp_uti * 1000) / 10;
     }).reverse(),
     fill: false,
-    borderColor: "#d01c8b",
+    borderColor: okPink,
     tension: 0.1
-  }]);
+  }], true);
   lineChart("numberOfBeds", data.map(function (a) {
     return moment(a.ts_run).format("DD/MM/YYYY");
   }).reverse(), [{
@@ -7533,7 +7550,7 @@ function init(allData, region) {
       return Math.round(a.oferta_total_uti);
     }).reverse(),
     fill: false,
-    borderColor: "#00cb8d",
+    borderColor: okGreen,
     tension: 0.1
   }, {
     label: "Ocupação - Total de Leitos UTI (Covid e Não-Covid)",
@@ -7541,15 +7558,15 @@ function init(allData, region) {
       return Math.round(a.ocup_total_uti);
     }).reverse(),
     fill: false,
-    borderColor: '#d01c8b',
+    borderColor: okPink,
     tension: 0.1
-  }]);
+  }], true);
   $("#regionSelect").on("change", function () {
     init(jsonData, this.value);
   });
 }
 
-function lineChart(id, labels, datasets) {
+function lineChart(id, labels, datasets, beginAtZero) {
   var chartData = {
     labels: labels,
     datasets: datasets
@@ -7566,6 +7583,11 @@ function lineChart(id, labels, datasets) {
           display: true,
           position: "bottom"
         }
+      },
+      scales: {
+        y: {
+          beginAtZero: beginAtZero
+        }
       }
     }
   };
@@ -7573,7 +7595,7 @@ function lineChart(id, labels, datasets) {
 }
 
 function gaugeChart(value, arrow) {
-  return "\n    <div class=\"sc-gauge mt1\">\n        <div class=\"sc-background\">\n          <div class=\"sc-percentage\" style=\"--rotation: ".concat(value * 180, "deg; --background: red;\"></div>\n          <div class=\"sc-mask\"></div>\n          <span class=\"sc-value\">").concat((value * 100).toLocaleString('pt-BR', {
+  return "\n    <div class=\"sc-gauge mt1\">\n        <div class=\"sc-background\">\n          <div class=\"sc-percentage\" style=\"--rotation: ".concat(value * 180, "deg; --background: ").concat(okPink, ";\"></div>\n          <div class=\"sc-mask\"></div>\n          <span class=\"sc-value\">").concat((value * 100).toLocaleString("pt-BR", {
     maximumFractionDigits: 0
   }), "%").concat(arrow, "</span>\n        </div>\n        <span class=\"sc-min\">0</span>\n        <span class=\"sc-max\">100</span>\n    </div>\n  ");
 }
@@ -7583,7 +7605,7 @@ function valueChange(latest, previous, column, upIsGood) {
   var valPrevious = Math.round(previous[column] * 1000) / 10;
 
   if (valLatest === valPrevious) {
-    return "<span></span>";
+    return "<span>&nbsp;&ndash;</span>";
   } else if (valLatest > valPrevious) {
     return "<span class=\"".concat(upIsGood ? 'change-good' : 'change-bad', "\">&#9650;</span>");
   } else if (valLatest < valPrevious) {
@@ -7596,5 +7618,5 @@ function generateSelect(region) {
   var options = regions.map(function (a) {
     return "<option value=\"".concat(a, "\" ").concat(a === region ? "selected" : "", ">").concat(a, "</option>");
   });
-  return "<div class=\"mb2\">\n    <label>Filtre por regi\xE3o</label>\n    <select id=\"regionSelect\">\n      ".concat(options.join('\n'), "\n    </select>\n  </div>");
+  return "<div class=\"mb2\">\n    <label><strong>Filtre por regi\xE3o</strong></label>\n    <select id=\"regionSelect\">\n      ".concat(options.join('\n'), "\n    </select>\n  </div>");
 }
