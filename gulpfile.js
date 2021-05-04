@@ -29,14 +29,14 @@ gulp.task('default', gulp.series(function(done) {
       .pipe(uglify())
       .pipe(gulp.dest(themePath + '/build'));
   });
-  gulp.watch(themePath + '/src/scripts/**/*.js').on('change', function(path, stats) {
+  gulp.watch(themePath + '/src/scripts/indice/*.js').on('change', function(path, stats) {
     gulp.src([themePath + '/src/scripts/indice/*.js'])
       .pipe(concat('indice.js'))
       .pipe(uglify())
       .pipe(gulp.dest(themePath + '/build'));
   });
-  gulp.watch(themePath + '/src/scripts/**/*.js').on('change', function(path, stats) {
-    gulp.src([BABEL_POLYFILL, themePath + '/src/scripts/leitos/_leitos.js'])
+  gulp.watch(themePath + '/src/scripts/leitos/*.js').on('change', function(path, stats) {
+    gulp.src([BABEL_POLYFILL, themePath + '/src/scripts/leitos/*.js'])
       .pipe(concat('leitos.js'))
       // .pipe(uglify())
       .pipe(strip())
@@ -46,7 +46,7 @@ gulp.task('default', gulp.series(function(done) {
   done();
 }));
 
-gulp.task('js', function() {
+gulp.task('leitos', function() {
     return gulp.src([BABEL_POLYFILL, themePath + '/src/scripts/leitos/_leitos.js'])
       .pipe(concat('leitos.js'))
       // .pipe(uglify())

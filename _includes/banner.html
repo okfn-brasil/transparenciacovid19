@@ -2,7 +2,6 @@
 <header id="abertura">
     <img class="anm" data-speed-x="1" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-blur-p.png">
     <img class="anm" data-speed-x="-4" data-speed-y="4" data-speed-scale="2" data-speed-rotate="3" src="./assets/images/corona-blur.png">
-    <img class="anm" data-speed-x="2" data-speed-y="-2" data-speed-scale="2" data-speed-rotate="2" src="./assets/images/corona-blur.png">
     <div class="container-fluid wrap">
         <div class="row">
             <div class="col-xs-12 col-md-7 mb2 mb0-md relative z3">
@@ -26,3 +25,22 @@
         </div>
     </div>
 </header>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    // Copy //
+    url = window.location.href;
+
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(element).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+
+    $(".copiar").on("click", function() {
+      copyToClipboard(url);
+    });
+  });
+</script>
