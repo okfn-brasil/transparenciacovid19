@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="pt_br">
 <head>
@@ -20,42 +22,7 @@
     <link rel="stylesheet" href="./build/style.css">
 </head>
 <body>
-    <header class="top-bar">
-        <nav class="container-fluid wrap">
-            <input type="checkbox" class="btn-menu">
-            <ul>
-                <img class="anm" data-speed-x="-0.5" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-magenta.png">
-                <img class="anm" data-speed-x="2" data-speed-y="-1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-verde.png">
-                <li><a href="../">Inicio</a></li>
-                <li><a href="../boletins.html">Boletins</a></li>
-                <li><a href="../midia.html">Na mídia</a></li>
-                <li><a href="../metodologia.html">Metodologia</a></li>
-                <li>
-                    <input type="checkbox" name="dropdown" id="dropdown-bases">
-                    <label for="dropdown-bases">Bases de dados</label>
-                    <ul>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1Ol_cMNdOA90hndREuGjkKler1xbmsLksWQAuZmJpBJE/edit?usp=sharing" target="_blank" >Estados</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/1nX-jt-dgQ1Q5Ke9zXr-dQxC9lAxQy0Zac8WHCyb3zKc/edit?usp=sharing" target="_blank">Capitais</a></li>
-                    </ul>
-                </li>
-                <li><a href="../toolkits.html">Toolkits</a></li>
-                <li><a href="../entrevistas.html">Entrevistas</a></li>
-                <li><a href="../sobre.html">Sobre</a></li>
-                <li>
-                    <input type="checkbox" name="dropdown" id="dropdown-versao">
-                    <label for="dropdown-versao" class="ativo">Versão anterior</label>
-                    <ul>
-                        <li><a href="../v1">Mapa</a></li>
-                        <li><a href="https://transparenciacovid19.ok.org.br/files/Nota_Metodologica_Transparencia_da_Covid-19V.3.pdf" target="_blank">Metodologia</a></li>
-                        <li><a href="https://docs.google.com/spreadsheets/d/18z8H9sR13HDQ007kCKJRJ_Y9gNCacjHRPW9j28aRlUk/edit#gid=793093003" target="_blank">Base de dados</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="logo-wrapper">
-                <a href="https://www.ok.org.br/" target="_blank" class="logo"></a>
-            </div>
-        </nav>
-    </header>
+    {% include navbar.html %}
 
     <main>
         <!-- Abertura -->
@@ -112,7 +79,7 @@
                         <h4 class="t4 tcp w600 ff1">Avaliação por estado da federação</h4>
                         <div class="grafico-mapa">
                             <!-- SVG -->
-                            <svg class="mapa" viewBox="0 0 465 488.2"></svg>                        
+                            <svg class="mapa" viewBox="0 0 465 488.2"></svg>
 
                             <p class="t2 uc tcc w400 ff3 mt2">Níveis de transparência</p>
                             <ul class="legenda">
@@ -199,7 +166,7 @@
             <div class="container-fluid wrap">
                 <div class="row">
                     <div class="col-xs-12 col-md-7 relative z2">
-                        <h3 class="t6 w700 mb1 tcb">Sobre o Índice</h3>
+                        <h3 class="t6 w700 mb1 tcb">Sobre o Índice 1.0</h3>
                         <p class="t3 tcb ff1 w400 lh1-50">De 3 de abril a 12 de junho, o Índice de Transparência da Covid-19 da Open Knowledge Brasil (OKBR) avaliou a qualidade dos dados e informações relativos à pandemia do novo coronavírus que têm sido publicados pela União e pelos estados brasileiros em seus portais oficiais. O processo teve alto impacto: se, no início, 90% dos entes avaliados tinham nível abaixo de "Bom", esse período terminou com apenas 11% nessa condição. Nesta página, você pode verificar a linha do tempo de todas as semanas de avaliação da primeira versão do Índice.</p>
                         <a href="https://transparenciacovid19.ok.org.br/files/Nota_Metodologica_Transparencia_da_Covid-19V.3.pdf" target="_blank" class="btn-txt">NOTA METODOLÓGICA 1.0</a><br>
                         <a href="https://docs.google.com/spreadsheets/d/18z8H9sR13HDQ007kCKJRJ_Y9gNCacjHRPW9j28aRlUk/edit#gid=793093003" target="_blank" class="btn-txt">BASE DE DADOS 1.0</a>
@@ -214,7 +181,7 @@
                 </div>
             </div>
         </article>
-       
+
         <!-- Gestor -->
         <article id="gestor">
             <div class="container-fluid wrap">
