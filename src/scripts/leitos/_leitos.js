@@ -38,11 +38,7 @@ function init(allData, region) {
     ${generateSelect(region)}
 
     <!-- Dados gerais -->
-    <div class="row">
-      <div class="col-xs-12">
-        <h2 class="t6 bb">Dados gerais</h2>
-      </div>
-    </div>
+    ${sectionTitle("Dados gerais")}
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Total de estabelecimentos hospitalares</h5>
@@ -58,11 +54,7 @@ function init(allData, region) {
     </div>
 
     <!-- Atualização -->
-    <div class="row mt4">
-      <div class="col-xs-12">
-        <h2 class="t6 bb">Atualização dos dados</h2>
-      </div>
-    </div>
+    ${sectionTitle("Atualização dos dados")}
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Estabelecimentos desatualizados há 7 dias ou mais</h5>
@@ -83,11 +75,7 @@ function init(allData, region) {
     </div>
 
     <!-- Problemas taxa de ocupação -->
-    <div class="row mt4">
-      <div class="col-xs-12">
-        <h2 class="t6 bb">Problemas de qualidade nas taxas de ocupação de UTIs</h2>
-      </div>
-    </div>
+    ${sectionTitle("Problemas de qualidade nas taxas de ocupação de UTIs")}
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Estabelecimentos com problemas na taxa de ocupação (acima de 120%)*</h5>
@@ -105,11 +93,7 @@ function init(allData, region) {
     </div>
 
     <!-- Taxa de ocupação -->
-    <div class="row mt4">
-      <div class="col-xs-12">
-        <h2 class="t6 bb">Taxa de ocupação de UTIs</h2>
-      </div>
-    </div>
+    ${sectionTitle("Taxa de ocupação de UTIs")}
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Taxa de ocupação atual</h5>
@@ -127,11 +111,7 @@ function init(allData, region) {
     </div>
 
     <!-- Oferta e ocupação -->
-    <div class="row mt4">
-      <div class="col-xs-12">
-        <h2 class="t6 bb">Oferta e ocupação de leitos de UTI</h2>
-      </div>
-    </div>
+    ${sectionTitle("Oferta e ocupação de leitos de UTI")}
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Leitos de UTI existentes</h5>
@@ -309,5 +289,13 @@ function generateSelect(region) {
     <select id="regionSelect">
       ${options.join('\n')}
     </select>
+  </div>`)
+}
+
+function sectionTitle(title) {
+  return (`<div class="row mt4">
+    <div class="col-xs-12">
+      <h2 class="t6 bb">${title}</h2>
+    </div>
   </div>`)
 }
