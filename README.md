@@ -1,8 +1,11 @@
-bundle install
-bundle exec jekyll serve --livereload
+# Site Transparência Covid-19
 
-- Instalar as dependências:
-npm install
+## Para rodar site
 
-- Rodar o gulp:
-npm run watch
+    bundle install
+    bundle exec jekyll serve --livereload
+
+### Para alterar Javascript e Sass
+
+    npm install
+    npm run watch  # roda o gulp

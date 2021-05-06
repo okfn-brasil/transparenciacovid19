@@ -1706,3 +1706,44 @@
 			.pt3;
 			.pb5;
 		}
+
+.page-buttons {
+	font-size: calc(1rem + .5 * ((100vw - 31.25em)/ 58.75));
+	padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+	border-radius: 5px;
+  margin: 0;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  overflow: hidden;
+	&:hover {
+		background: @verde;
+	}
+}
+
+.bg-green {
+	background: @verde !important;
+}
+
+.versao-3 {
+	position: relative;
+	color: #fff;
+}
+
+.versao-3:before {
+	content: "";
+  height: 90%;
+  width: 110%;
+  background-color: #00cb8d;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
