@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function getDataAndInit() {
   $.getJSON(dataUrl, function(data) {
-    console.log(data)
     success = true
     jsonData = data
     init(data, "Brasil")
@@ -96,9 +95,10 @@ function init(allData, region) {
     ${sectionTitle("Taxa de ocupação de UTIs")}
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
-        <h5>Taxa de ocupação atual</h5>
+        <h5>Taxa de ocupação atual*</h5>
         <h4 class="t5">${(latest.tx_ocup_srag_uti * 100).toLocaleString("pt-BR", {maximumFractionDigits: 0})}% ${valueChange(latest, previous, 'tx_ocup_srag_uti', false)} (Covid)</h4>
         <h4 class="t5">${(latest.tx_ocup_hosp_uti * 100).toLocaleString("pt-BR", {maximumFractionDigits: 0})}% ${valueChange(latest, previous, 'tx_ocup_hosp_uti', false)} (Não-Covid)</h4>
+        <p class="mt1 mb0">*As taxas de ocupação são calculadas dividindo a ocupação pela oferta de leitos Covid-19. É possível que, devido ao momento crítico da pandemia, as taxas de ocupação excedam 100%, mas taxas muito superiores tendem a indicar problemas no registro dos dados.</p>
       </div>
     </div>
     <div class="row mt3">

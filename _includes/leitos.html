@@ -11,13 +11,16 @@
 <!-- Painel leitos Covid-19 -->
 <article id="painel-leitos">
   <div class="container-fluid wrap mt2">
-    <div class="row">
-      <section class="col-xs-12">
+    <section class="row">
+      <div class="col-xs-12">
         <h3 class="t7 tcp w300"><strong>Monitor de qualidade dos dados</strong> do&nbsp;Censo&nbsp;Hospitalar</h3>
-        <p class="t2 uc tcc w400 mb2 ff2">Veja como está a transparência sobre os dados de leitos</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </section>
-    </div>
+        <p class="t4 uc tcc w400 mb2 ff2">Veja como está a transparência sobre os dados de ocupação de leitos no país</p>
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <p class="t3 w400 lh1-50">Desde abril de 2020, todos os <strong>estabelecimentos de saúde</strong> do país têm a <a class="underline tcrs" href="https://www.in.gov.br/en/web/dou/-/portaria-n-758-de-9-de-abril-de-2020-251970323" target="_blank" rel="noreferrer">obrigação</a> de preencher <strong>diariamente</strong> o chamado "Censo Hospitalar". Trata-se de um sistema do Ministério da Saúde para registro da oferta e ocupação de leitos públicos e privados, sejam eles destinados a pacientes com Covid-19, sejam gerais, para as demais enfermidades.</p>
+        <p class="t3 w400 lh1-50">Para avaliar se os dados estão sendo preenchidos de forma correta e se são úteis para monitorar a ocupação de leitos em todo o país, a Open Knowledge Brasil desenvolveu este painel, que apresenta indicadores de qualidade com atualizaçao diária. Acompanhe!</p>
+      </div>
+    </section>
     <div class="wrap mb4 mt2" id="app">
       <div class="dashboard-loader">Carregando dados...</div>
     </div>
@@ -31,9 +34,11 @@
   <div class="container-fluid wrap">
     <div class="row">
       <div class="col-xs-12 col-md-7 relative z2">
-        <h3 class="t6 w700 mb1 tcb">Sobre o Monitor de Leitos</h3>
-        <p class="t3 tcb ff1 w400 lh1-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="t3 tcb ff1 w400 lh1-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h3 class="t6 w700 mb1 tcb">Sobre o painel</h3>
+        <p class="t3 tcb ff1 w400 lh1-50">Dados sobre a disponibilidade e a ocupação de leitos estão entre os indicadores mais importantes para monitorar a Covid-19 no país. Portanto, é fundamental que estejam disponíveis e atualizados e sejam consistentes.</p>
+        <p class="t3 tcb ff1 w400 lh1-50">Apesar da obrigatoriedade de preenchimento diário do Censo Hospitalar já em abril de 2020 (instituída pela <a class="underline tcrs" href="https://www.in.gov.br/en/web/dou/-/portaria-n-758-de-9-de-abril-de-2020-251970323" target="_blank" rel="noreferrer">Portaria no. 758/2020</a> do Ministério da Saúde), esse dado seguiu sem qualquer divulgação pelo governo federal até outubro do mesmo ano, quando uma versão preliminar foi disponibilizada por meio de uma API (Application Programming Interface, ou, em português, Interface de Programação de Aplicação). Esse método, embora interessante para cientistas de dados e pessoas com conhecimento de linguagens de programação, é inacessível para a maior parte dos usuários, pois não havia uma planilha para download em CSV ou XLSX.</p>
+        <p class="t3 tcb ff1 w400 lh1-50">Somente em março de 2021 que o Ministério da Saúde passou a publicar uma <a href="https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar" target="_blank" rel="noreferrer" class="underline tcrs">versão em planilha no OpenDataSUS</a>, contendo a série histórica dos dados. No entanto, o arquivo disponibilizado não contém todos os dados da API, como a quantidade de leitos ofertados em cada estabelecimento, que permite calcular de fato a taxa de ocupação. Além de prejudicar o cálculo da taxa de ocupação, a inexistência desses campos na base de dados impede o acompanhamento de expansão de leitos ao longo do tempo.</p>
+        <p class="t3 tcb ff1 w400 lh1-50">Atualizado diariamente, este painel é alimentado pelos dados obtidos por meio da API. Além de oferecer uma “fotografia” sobre a qualidade do preenchimento dos dados do Censo Hospitalar, o painel também disponibiliza a série histórica dos dados, com todas as variáveis da API, a partir de 23 de fevereiro de 2021.</p>
       </div>
       <div class="col-xs-12 col-md-5">
         <figure class="corona">
