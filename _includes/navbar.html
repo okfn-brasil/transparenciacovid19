@@ -1,0 +1,66 @@
+<header class="top-bar">
+    <nav class="container-fluid wrap">
+        <input type="checkbox" class="btn-menu">
+        <ul id="navbar-list">
+            <img class="anm" data-speed-x="-0.5" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-magenta.png">
+            <img class="anm" data-speed-x="2" data-speed-y="-1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-verde.png">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/itc">ITC 19 3.0</a></li>
+            <li><a href="/">Leitos</a></li>
+            <!-- <li><a href="./vacinacao">Vacinação</a></li> -->
+            <li><a href="/boletins">Boletins</a></li>
+            <li><a href="/midia">Na mídia</a></li>
+            <li><a href="/toolkits">Toolkits</a></li>
+            <li><a href="/entrevistas">Entrevistas</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li>
+                <input type="checkbox" name="dropdown" id="dropdown-versao">
+                <label for="dropdown-versao">Versões anteriores</label>
+                <ul>
+                    <li><a href="/v2">V2.0</a></li>
+                    <li><a href="/v1">V1.0</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="logo-wrapper">
+            <a href="https://www.ok.org.br/" target="_blank" class="logo"></a>
+        </div>
+    </nav>
+</header>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    /* Scroll */
+    var posScroll = 0;
+
+    function checarScroll() {
+      posAtual = $(window).scrollTop();
+      if (posAtual != 0) {
+        $("body").addClass('scrolled');
+        if (posAtual >= posScroll) {
+          posScroll = posAtual;
+          $("body").removeClass('scrollup');
+          $('.top-bar input').prop('checked', false);
+        } else {
+          posScroll = posAtual;
+          $("body").addClass('scrollup');
+        }
+      } else {
+        $("body").removeClass('scrolled').removeClass('scrollup');
+      }
+    }
+    checarScroll();
+    $(window).scroll(function() {
+      checarScroll();
+      $(".tooltip").removeClass('ativo');
+    });
+
+    var links = $('#navbar-list > li > a');
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      if (link.href === window.location.href) {
+        $(link).addClass('ativo');
+      }
+    }
+  });
+</script>

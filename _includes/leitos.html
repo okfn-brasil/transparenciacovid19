@@ -1,0 +1,80 @@
+<div class="container-fluid wrap">
+  <!-- Links Páginas -->
+  <div class="switch grande">
+    <a href="/" class="page-buttons bg-green">Monitor de Leitos</a>
+    <!-- <a href="/vacinacao" class="page-buttons">Monitor da Vacinação</a> -->
+    <a href="/itc" class="page-buttons">ITC 3.0</a>
+  </div>
+</div>
+
+
+<!-- Painel leitos Covid-19 -->
+<article id="painel-leitos">
+  <div class="container-fluid wrap mt2">
+    <section class="row">
+      <div class="col-xs-12">
+        <h3 class="t7 tcp w300"><strong>Monitor de qualidade dos dados</strong> do&nbsp;Censo&nbsp;Hospitalar</h3>
+        <p class="t4 uc tcc w400 mb2 mt1 ff2">Veja como está a transparência da ocupação de leitos no país</p>
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <p class="t3 w400 lh1-50">Desde abril de 2020, todos os <strong>estabelecimentos de saúde</strong> do país têm a <a class="underline tcrs" href="https://www.in.gov.br/en/web/dou/-/portaria-n-758-de-9-de-abril-de-2020-251970323" target="_blank" rel="noreferrer">obrigação</a> de preencher <strong>diariamente</strong> o chamado "Censo Hospitalar". Trata-se de um sistema do Ministério da Saúde para registro da oferta e ocupação de leitos públicos e privados, sejam eles destinados a pacientes com Covid-19, sejam gerais, para as demais enfermidades.</p>
+        <p class="t3 w400 lh1-50">Para avaliar se os dados estão sendo preenchidos de forma correta e se são úteis para monitorar a ocupação de leitos em todo o país, a Open Knowledge Brasil desenvolveu este painel, que apresenta indicadores de qualidade com atualizaçao diária. Acompanhe!</p>
+      </div>
+    </section>
+    <div class="wrap mb4 mt2" id="app">
+      <div class="dashboard-loader">Carregando dados...</div>
+    </div>
+  </div>
+</article>
+
+<!-- Sobre o índice -->
+<article id="sobre">
+  <img class="anm" data-speed-x="1" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-blur.png">
+  <img class="anm" data-speed-x="-4" data-speed-y="4" data-speed-scale="2" data-speed-rotate="3" src="./assets/images/corona-blur.png">
+  <div class="container-fluid wrap">
+    <div class="row">
+      <div class="col-xs-12 col-md-7 relative z2">
+        <h3 class="t6 w700 mb1 tcb">Sobre o painel</h3>
+        <p class="t3 tcb ff1 w400 lh1-50">Dados sobre a disponibilidade e a ocupação de leitos estão entre os indicadores mais importantes para monitorar a Covid-19 no país. Portanto, é fundamental que estejam disponíveis e atualizados e sejam consistentes.</p>
+        <p class="t3 tcb ff1 w400 lh1-50">Apesar da obrigatoriedade de preenchimento diário do Censo Hospitalar já em abril de 2020 (instituída pela <a class="underline tcrs" href="https://www.in.gov.br/en/web/dou/-/portaria-n-758-de-9-de-abril-de-2020-251970323" target="_blank" rel="noreferrer">Portaria no. 758/2020</a> do Ministério da Saúde), esse dado seguiu sem qualquer divulgação pelo governo federal até outubro do mesmo ano, quando uma versão preliminar foi disponibilizada por meio de uma API (Application Programming Interface, ou, em português, Interface de Programação de Aplicação). Esse método, embora interessante para cientistas de dados e pessoas com conhecimento de linguagens de programação, é inacessível para a maior parte dos usuários, pois não havia uma planilha para download em CSV ou XLSX.</p>
+        <p class="t3 tcb ff1 w400 lh1-50">Somente em março de 2021 que o Ministério da Saúde passou a publicar uma <a href="https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar" target="_blank" rel="noreferrer" class="underline tcrs">versão em planilha no OpenDataSUS</a>, contendo a série histórica dos dados. No entanto, o arquivo disponibilizado não contém todos os dados da API, como a quantidade de leitos ofertados em cada estabelecimento, que permite calcular de fato a taxa de ocupação. Além de prejudicar o cálculo da taxa de ocupação, a inexistência desses campos na base de dados impede o acompanhamento de expansão de leitos ao longo do tempo.</p>
+        <p class="t3 tcb ff1 w400 lh1-50">Atualizado diariamente, este painel é alimentado pelos dados obtidos por meio da API. Além de oferecer uma “fotografia” sobre a qualidade do preenchimento dos dados do Censo Hospitalar, o painel também disponibiliza a série histórica dos dados, com todas as variáveis da API, a partir de 23 de fevereiro de 2021.</p>
+      </div>
+      <div class="col-xs-12 col-md-5">
+        <figure class="corona">
+          <img src="./assets/images/corona.png">
+          <img class="anm" data-speed-x="-0.5" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-magenta.png">
+          <img class="anm" data-speed-x="2" data-speed-y="-1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-verde.png">
+        </figure>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- Links -->
+<article id="links">
+  <img class="anm" data-speed-x="2" data-speed-y="4" data-speed-scale="2" data-speed-rotate="2" src="./assets/images/corona-blur.png">
+  <div class="container-fluid wrap">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div target="_blank" class="box-link boletim">
+          <h5 class="t5 tcb w700">Relatórios</h5>
+          <a href="https://transparenciacovid19.ok.org.br/files/ESPECIAL_Transparencia-Covid19_OcupacaoLeitos_01.pdf" target="_blank" rel="noreferrer" class="btn-txt block mb05">Relatório Abril 2021</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="box-link base">
+          <h5 class="t5 tcb w700">Dados abertos</h5>
+          <a href="https://leitos-hospitalares.s3.amazonaws.com/leitos_all_data.csv" target="_blank" rel="noreferrer" class="btn-txt block mb05">Baixe os dados</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+<!-- Tooltip -->
+<div class="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js" integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ==" crossorigin="anonymous"></script>
+<script src="./build/leitos.js"></script>

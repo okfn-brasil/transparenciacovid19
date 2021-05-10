@@ -1,0 +1,46 @@
+<!-- Abertura -->
+<header id="abertura">
+    <img class="anm" data-speed-x="1" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-blur-p.png">
+    <img class="anm" data-speed-x="-4" data-speed-y="4" data-speed-scale="2" data-speed-rotate="3" src="./assets/images/corona-blur.png">
+    <div class="container-fluid wrap">
+        <div class="row">
+            <div class="col-xs-12 col-md-7 mb2 mb0-md relative z3">
+                <h1 class="t8 w300 tcb ls1">Transparência <span class="w700 tcvd block">COVID-19 <span class="versao-3">3.0</span></span></h1>
+                <h2 class="t6 w300 tcb mb2 mb0-md">Dados abertos podem salvar vidas</h2>
+                <ul class="compartilhar">
+                    <li><a href="whatsapp://send?text=https%3A//transparenciacovid19.ok.org.br/" target="_blank" class="whatsapp"></a></li>
+                    <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//transparenciacovid19.ok.org.br/" target="_blank" class="facebook"></a></li>
+                    <li><a href="https://twitter.com/intent/tweet?text=https%3A//transparenciacovid19.ok.org.br/" target="_blank" class="twitter"></a></li>
+                    <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//transparenciacovid19.ok.org.br//&title=Transparencia%20Covid-19&summary=&source=" target="_blank" class="linkedin"></a></li>
+                    <li><a class="copiar" title="clique para copiar"></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-md-5">
+                <figure class="corona z1">
+                    <img src="./assets/images/corona.png">
+                    <img class="anm" data-speed-x="-0.5" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-magenta.png">
+                    <img class="anm" data-speed-x="2" data-speed-y="-1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-verde.png">
+                </figure>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    // Copy //
+    url = window.location.href;
+
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val(element).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+
+    $(".copiar").on("click", function() {
+      copyToClipboard(url);
+    });
+  });
+</script>
