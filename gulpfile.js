@@ -49,8 +49,8 @@ gulp.task('default', gulp.series(function(done) {
 gulp.task('leitos', function() {
     return gulp.src([BABEL_POLYFILL, themePath + '/src/scripts/leitos/_leitos.js'])
       .pipe(concat('leitos.js'))
-      // .pipe(uglify())
       .pipe(strip())
       .pipe(babel({ presets: ['@babel/preset-env'] }))
+      // .pipe(uglify())
       .pipe(gulp.dest(themePath + '/build'));
 });

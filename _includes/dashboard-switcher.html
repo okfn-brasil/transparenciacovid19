@@ -1,0 +1,20 @@
+<div class="container-fluid wrap">
+  <!-- Links Páginas -->
+  <div class="switch grande" id="switcher-links">
+    <a href="/" class="page-buttons">Monitor de Leitos</a>
+    <!-- <a href="/vacinacao" class="page-buttons">Monitor da Vacinação</a> -->
+    <a href="/itc" class="page-buttons">ITC-19 3.0</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    var links = $('#switcher-links > a');
+    for (var i = 0; i < links.length; i++) {
+      var link = links[i];
+      if (link.href === window.location.href) {
+        $(link).addClass('bg-green');
+      }
+    }
+  });
+</script>
