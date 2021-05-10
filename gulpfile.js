@@ -38,9 +38,9 @@ gulp.task('default', gulp.series(function(done) {
   gulp.watch(themePath + '/src/scripts/leitos/*.js').on('change', function(path, stats) {
     gulp.src([BABEL_POLYFILL, themePath + '/src/scripts/leitos/*.js'])
       .pipe(concat('leitos.js'))
-      // .pipe(uglify())
       .pipe(strip())
       .pipe(babel({ presets: ['@babel/preset-env'] }))
+      .pipe(uglify())
       .pipe(gulp.dest(themePath + '/build'));
   });
   done();
