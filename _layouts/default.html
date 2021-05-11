@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt_br">
-
-<body>
-
+<html lang="pt-BR">
   {% include head.html %}
 
-  {% include navbar.html %}
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRWLTFX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
+    {% include navbar.html %}
+    <main>
+      {% include banner.html %}
 
-  <main>
-    {% include banner.html %}
+      {{ content }}
 
-    {{ content }}
-
-    {% include manager-contact.html %}
-    {% include footer.html %}
-  </main>
-</body>
-<script src="./build/script.js"></script>
-
+      {% include manager-contact.html %}
+      {% include footer.html %}
+    </main>
+  <script src="./build/script.js"></script>
+  </body>
 </html>
