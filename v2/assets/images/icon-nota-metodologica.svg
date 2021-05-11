@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="133px" height="119px" viewBox="0 0 133 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>9FBDD20A-1D46-4C32-9A8F-D616A4EB4A6E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-1">
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-2">
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-3">
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="wires" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00_Home-table" transform="translate(-736.000000, -3356.000000)">
+            <g id="bloco-dark-bkg" transform="translate(0.000000, 2247.000000)">
+                <g id="#banners" transform="translate(80.000000, 1084.000000)">
+                    <g id="banner-nota" transform="translate(434.000000, 0.000000)">
+                        <g id="icon-nota-metodologica" transform="translate(222.896907, 22.500000)">
+                            <g id="icon" transform="translate(0.000000, 0.500000)">
+                                <g id="Group-3" transform="translate(0.000000, 0.425000)">
+                                    <g id="Group-14" transform="translate(35.058668, 0.608197)">
+                                        <g id="Group-3" transform="translate(0.000000, 80.822000)" fill="url(#linearGradient-1)">
+                                            <polygon id="Fill-1" points="0 39 47.499 39 23.749 0.39"></polygon>
+                                        </g>
+                                        <polygon id="Stroke-4" stroke="#000000" stroke-width="3" stroke-linecap="round" points="23.7495 92.6076 36.3745 113.1316 11.1245 113.1316"></polygon>
+                                        <g id="Group-7" transform="translate(6.000000, 0.822000)" fill="url(#linearGradient-2)">
+                                            <polygon id="Fill-5" points="24.087 0.177 0.794 23.47 24.087 46.763 47.38 23.47"></polygon>
+                                        </g>
+                                        <polygon id="Stroke-8" stroke="#000000" stroke-width="3" stroke-linecap="round" points="30.0869 38.1335 16.2459 24.2925 30.0869 10.4515 43.9279 24.2925"></polygon>
+                                        <g id="Group-11" transform="translate(51.000000, 33.822000)" fill="url(#linearGradient-3)">
+                                            <path d="M0.675,22.882 C0.675,35.227 10.683,45.235 23.029,45.235 L23.029,45.235 C35.374,45.235 45.381,35.227 45.381,22.882 L45.381,22.882 C45.381,10.537 35.374,0.53 23.029,0.53 L23.029,0.53 C10.683,0.53 0.675,10.537 0.675,22.882" id="Fill-9"></path>
+                                        </g>
+                                        <path d="M88.146,56.7043 C88.146,64.5013 81.825,70.8223 74.028,70.8223 C66.231,70.8223 59.911,64.5013 59.911,56.7043 C59.911,48.9073 66.231,42.5863 74.028,42.5863 C81.825,42.5863 88.146,48.9073 88.146,56.7043 Z" id="Stroke-12" stroke="#000000" stroke-width="3" stroke-linecap="round"></path>
+                                    </g>
+                                    <path d="M47.6692784,78.1843936 L67.4432784,29.1563936 C68.8092784,25.7723936 67.1712784,21.9213936 63.7872784,20.5563936 C60.4022784,19.1913936 56.5522784,20.8283936 55.1872784,24.2133936 L47.7712784,42.5983936 L36.9572784,38.2373936 C34.4682784,37.2323936 31.6362784,38.4363936 30.6322784,40.9263936 L28.7422784,45.6113936 L20.9932784,42.4863936 C18.5032784,41.4813936 15.6712784,42.6853936 14.6672784,45.1753936 L1.39527835,78.0813936 C-0.850721648,83.6493936 1.84227835,89.9843936 7.41127835,92.2303936 L29.5032784,101.141394 L65.7092784,84.6393936 C68.7102784,83.2703936 70.2112784,79.8723936 69.2002784,76.7323936 C68.0292784,73.0943936 63.9872784,71.2463936 60.4692784,72.7423936 L47.6692784,78.1843936 Z" id="Stroke-1" stroke="#FFFFFF" stroke-width="3" stroke-linejoin="round"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

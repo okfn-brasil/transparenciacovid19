@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="106px" viewBox="0 0 100 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>12004B6A-5E46-4AC1-BF40-38E768563220</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="0.000523664172%" y1="50.0000207%" x2="100.0007%" y2="50.0000207%" id="linearGradient-1">
+            <stop stop-color="#00CB8D" offset="0%"></stop>
+            <stop stop-color="#00CB8D" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="wires" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00_Home-table" transform="translate(-322.000000, -3385.000000)">
+            <g id="bloco-dark-bkg" transform="translate(0.000000, 2247.000000)">
+                <g id="#banners" transform="translate(80.000000, 1084.000000)">
+                    <g id="banner-boletins">
+                        <g id="icon-boletins-semanais" transform="translate(243.896907, 54.500000)">
+                            <g id="icon" transform="translate(0.000000, 0.500000)">
+                                <g id="Group-3" transform="translate(36.000000, 29.425000)">
+                                    <polygon id="Fill-1" fill="url(#linearGradient-1)" points="0.815 75 61.751 75 61.751 0.708 0.815 0.708"></polygon>
+                                    <g id="Group-31" transform="translate(12.783000, 16.854000)" stroke="#000000" stroke-linecap="round" stroke-width="3">
+                                        <line x1="-3.55271368e-15" y1="0.5" x2="35.894" y2="0.5" id="Stroke-6"></line>
+                                        <line x1="0.4175" y1="20.5337" x2="36.3115" y2="20.5337" id="Stroke-7"></line>
+                                        <line x1="0.4175" y1="40.5674" x2="18.7815" y2="40.5674" id="Stroke-8"></line>
+                                    </g>
+                                </g>
+                                <polygon id="Stroke-4" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" points="0.5 74.792 61.436 74.792 61.436 0.5 0.5 0.5"></polygon>
+                                <line x1="12.8124" y1="17.6119" x2="48.7064" y2="17.6119" id="Stroke-6" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                                <line x1="13.2299" y1="37.6456" x2="49.1239" y2="37.6456" id="Stroke-7" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                                <line x1="13.2299" y1="57.6793" x2="31.5939" y2="57.6793" id="Stroke-8" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"></line>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
