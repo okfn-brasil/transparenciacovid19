@@ -115,13 +115,13 @@ function init(allData, region) {
     <div class="row mt1">
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Leitos de UTI existentes</h5>
-        <h4 class="t5">${Math.round(latest.ocup_srag_uti).toLocaleString("pt-BR")} (Covid)</h4>
-        <h4 class="t5">${Math.round(latest.ocup_hosp_uti).toLocaleString("pt-BR")} (Não-Covid)</h4>
+        <h4 class="t5">${Math.round(latest.oferta_srag_uti).toLocaleString("pt-BR")} (Covid)</h4>
+        <h4 class="t5">${Math.round(latest.oferta_hosp_uti).toLocaleString("pt-BR")} (Não-Covid)</h4>
       </div>
       <div class="col-sm-6 col-xs-12 mt1">
         <h5>Leitos de UTI ocupados</h5>
-        <h4 class="t5">${Math.round(latest.oferta_srag_uti).toLocaleString("pt-BR")} (Covid)</h4>
-        <h4 class="t5">${Math.round(latest.oferta_hosp_uti).toLocaleString("pt-BR")} (Não-Covid)</h4>
+        <h4 class="t5">${Math.round(latest.ocup_srag_uti).toLocaleString("pt-BR")} (Covid)</h4>
+        <h4 class="t5">${Math.round(latest.ocup_hosp_uti).toLocaleString("pt-BR")} (Não-Covid)</h4>
       </div>
     </div>
     <div class="row mt3">
