@@ -4,48 +4,33 @@
   <div class="container-fluid wrap mt2 mb2">
     <div class="row">
       <section class="col-xs-12" >
-
-        <section class="col-xs-12" style="padding: 0; padding-top: 10px;">
-          <div class="switch grande">
-              <label>
-                  <input type="radio" name="instancia" value="microdados-vacina" onChange="hideMunicipio();" checked>
-                  <p><span>Panorama da qualidade</span></p>
-              </label>
-              <label>
-                  <input type="radio" name="instancia" value="explore-municipio" onChange="hideMicrodados();">
-                  <p><span>Explore por municípios</span></p>
-              </label>
-          </div>
-        </section>
-
-
-        <section class="col-xs-12" id="microdados-vacina">
-        <h3 class="t7 tcp w300" >
-          Como está a qualidade dos <br/>
-          <strong>dados da vacinação?</strong>
-          <!-- <strong>Monitor da Vacinação</strong> da Covid-19 -->
-        </h3>
-        <p class="t4 tcc w400 mb2 mt1 ff2">Um panorama sobre a qualidade dos microdados de vacinação publicados pelo Ministério da Saúde via <a href="https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao" target="_blank" class="link"> Open DataSUS</a>. A atualização deste painel é semanal e conta com o apoio da <a href="http://lagomdata.com.br/" target="_blank" class="link">Lagom Data</a> para coleta e análise dos dados.</p>
-      
-       <!-- microdados-vacina - Panorama da qualidade-->
-        <section class="col-xs-12">
-          <!-- Qual é a diferença entre os microdados e o painel do Ministério da Saúde? -->
-          <!-- <div class="flourish-embed flourish-cards" data-src="visualisation/6128284"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6128284/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:250px;'
-            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
-          </iframe>
-          <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
-            <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128284/?utm_source=embed&utm_campaign=visualisation/6128284' target='_top' style='text-decoration:none!important'>
-              <img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
-            </a>
-          </div>
+        <section class="col-sm-12" id="microdados-vacina">
+          <h3 class="t7 tcp w300" >
+            Como está a qualidade dos <br/>
+            <strong>dados da vacinação?</strong>
+            <!-- <strong>Monitor da Vacinação</strong> da Covid-19 -->
+          </h3>
+          <p class="t4 tcc w400 mb2 mt1 ff2">Um panorama sobre a qualidade dos microdados de vacinação publicados pelo Ministério da Saúde via <a href="https://opendatasus.saude.gov.br/dataset/covid-19-vacinacao" target="_blank" class="link"> Open DataSUS</a>. A atualização deste painel é semanal e conta com o apoio da <a href="http://lagomdata.com.br/" target="_blank" class="link">Lagom Data</a> para coleta e análise dos dados.</p>
+        
+        <!-- microdados-vacina - Panorama da qualidade-->
+          <section class="col-sm-12">
+            <!-- Qual é a diferença entre os microdados e o painel do Ministério da Saúde? -->
+            <!-- <div class="flourish-embed flourish-cards" data-src="visualisation/6128284"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
+            <iframe src='https://flo.uri.sh/visualisation/6128284/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;padding-top:30px;' class='dif-micro'
+              sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+            </iframe>
+            <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
+              <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128284/?utm_source=embed&utm_campaign=visualisation/6128284' target='_top' style='text-decoration:none!important'>
+                <img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
+              </a>
+            </div>
 
         <!-- Quantos registros estão duplicados, ou seja, a mesma pessoa aparece mais de uma vez para a mesma dose? -->
           <!-- <div class="flourish-embed flourish-cards" data-src="visualisation/6126971"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6126971/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:250px;'
+          <iframe src='https://flo.uri.sh/visualisation/6126971/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;padding-top:30px;' class='reg-dup'
             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
           </iframe>
-          <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+          <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
             <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6126971/?utm_source=embed&utm_campaign=visualisation/6126971'
             target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg'
             style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
@@ -55,10 +40,10 @@
         <!-- Como está o preenchimento de raça e cor nos municípios? -->
         <h2 class="t6 bb pt3">Informações de raça/cor</h2>
           <!-- <div class="flourish-embed flourish-parliament" data-src="visualisation/6128308"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6128308/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:600px;'
+          <iframe src='https://flo.uri.sh/visualisation/6128308/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;padding-top:30px;' class='raca-cor'
             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
           </iframe>
-            <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+            <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
               <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128308/?utm_source=embed&utm_campaign=visualisation/6128308'
               target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg'
               style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
@@ -67,10 +52,10 @@
 
         <!-- E por UF, como fica a % de falta de preenchimento de raça/cor de vacinados? -->
           <!-- <div class="flourish-embed flourish-chart" data-src="visualisation/6128508"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6128508/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:600px;'
+          <iframe src='https://flo.uri.sh/visualisation/6128508/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;height:710px;padding-top:30px;' class='raca-cor-uf'
             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
           </iframe>
-          <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+          <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
             <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128508/?utm_source=embed&utm_campaign=visualisation/6128508'
               target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg'
               style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
@@ -80,10 +65,10 @@
         <!-- Quantos registros deixam de informar qual é o grupo prioritário ao qual a pessoa vacinada pertence? -->
         <h2 class="t6 bb pt3">Informação sobre grupo prioritário</h2>
           <!-- <div class="flourish-embed flourish-cards" data-src="visualisation/6128543"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6128543/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:250px;'
+          <iframe src='https://flo.uri.sh/visualisation/6128543/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;height:250px;padding-top:30px;' class='gru-pti'
             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
           </iframe>
-          <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+          <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
             <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128543/?utm_source=embed&utm_campaign=visualisation/6128543'
               target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg'
               style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
@@ -92,10 +77,10 @@
 
         <!-- Qual é o total de registros sem grupo prioritário, por UF? -->
           <!-- <div class="flourish-embed flourish-chart" data-src="visualisation/6128555"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6128555/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:600px;'
+          <iframe src='https://flo.uri.sh/visualisation/6128555/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;height:710px;padding-top:30px;' class='gru-pri-uf'
             sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
           </iframe>
-          <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
+          <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
             <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128555/?utm_source=embed&utm_campaign=visualisation/6128555'
               target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg'
               style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
@@ -105,34 +90,15 @@
         <!-- Quantos municípios estão atrasados na atualização dos dados, e por quanto tempo? -->
         <h2 class="t6 bb pt3">Atrasos na atualização</h2>
           <!-- <div class="flourish-embed flourish-chart" data-src="visualisation/6128555"><script src="https://public.flourish.studio/resources/embed.js"></script></div> -->
-          <iframe src='https://flo.uri.sh/visualisation/6128555/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='width:100%;height:600px;'
-            sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
-          </iframe>
-        <div style='width:100%!;margin-top:4px!important;text-align:right!important;'>
-          <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128555/?utm_source=embed&utm_campaign=visualisation/6128555'
-            target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg'
-            style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'>
-          </a>
-        </div>
-
-
-        <!-- <div class="flourish-embed flourish-cards" data-src="visualisation/5963255"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp;
-        <div class="flourish-embed flourish-cards" data-src="visualisation/5964078"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp;
-       
-        <div class="flourish-embed flourish-parliament" data-src="visualisation/5963470"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp;
-        <div class="flourish-embed flourish-chart" data-src="visualisation/5963048"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp;
-        
-        <div class="flourish-embed flourish-cards" data-src="visualisation/5964444"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp;
-        <div class="flourish-embed flourish-chart" data-src="visualisation/5964492"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp;
-        
-        <div class="flourish-embed flourish-parliament" data-src="visualisation/5963358"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
-        &nbsp; -->
+          <iframe src='https://flo.uri.sh/visualisation/6128570/embed' title='Interactive or visual content' frameborder='0' scrolling='no' style='display: flex;padding-top: 30px;' class='mun-atr'
+          sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'>
+        </iframe>
+        <div style='width:100%!;margin-top:4px!important;text-align: center!important;'>
+          <a class='flourish-credit' href='https://public.flourish.studio/visualisation/6128570/?utm_source=embed&utm_campaign=visualisation/6128570' 
+          target='_top' style='text-decoration:none!important'><img alt='Made with Flourish' src='https://public.flourish.studio/resources/made_with_flourish.svg' 
+          style='width:105px!important;height:16px!important;border:none!important;margin:0!important;'> 
+        </a>
+      </div>
       </section>
     </section>
 
@@ -154,12 +120,29 @@
             </a>
           </div>
         </section>
-      </section>
-      <section class="col-xs-12">
-        <div style='width:80%!;text-align:center!important;'>
-          <img src="/assets/images/okbr-monitordeleitos-banner.gif" alt="banner-caixa-aberta" style="margin-top:70px">
-        </div>
-      </section>
+      </section>      
+      
+      <section class="col-xs-12" style="margin-top: 70px;">
+        <div class="switch grande">
+            <label>
+              <input type="radio" name="instancia" value="microdados-vacina" onChange="hideMunicipio();" checked>
+              <p><span>Panorama da qualidade</span></p>
+            </label>
+            <label>
+              <input type="radio" name="instancia" value="explore-municipio" onChange="hideMicrodados();">
+              <p><span>Explore por municípios</span></p>
+            </label>
+          </div>
+        </section>
+        
+        <section class="col-xs-12">
+          <div style='width:80%!;text-align:center!important;'>
+            <a href="http://transparenciavacina.org.br" target="_blank">
+              <img src="/assets/images/okbr-monitordeleitos-banner.gif" alt="banner-caixa-aberta" style="margin-top:50px;margin-bottom: 50px;">
+            </a>
+          </div>
+        </section>
+        
     </div>
   </div>
 </article>
@@ -180,8 +163,138 @@
   }
 </script>
 
+<style>
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 409px) { 
+  iframe {
+    width: 100%;    
+    padding:0;
+  }
+  .dif-micro{
+    height: 320px;
+  }
+    .reg-dup{
+    height: 220px;
+  }
+  .raca-cor{
+    height:710px;
+  }
+  .raca-cor{
+    height:685px;
+  }
+  .mun-atr{
+    height: 640px;
+  }
+ }
+@media (min-width: 410px) and (max-width: 480px) { 
+  iframe {
+    width: 100%;    
+    padding:0;
+  }
+  .dif-micro{
+    height: 350px;
+  }
+  .reg-dup{
+    height: 240px;
+  }
+  .raca-cor, .mun-atr{
+    height:710px;
+  }
+ }
+@media (min-width: 481px) and (max-width: 575.90px) { 
+    iframe {
+    width: 100%;    
+    padding:0;
+  }
+  .dif-micro{
+    height: 250px;
+  }
+  .reg-dup{
+    height: 250px;
+  }
+  .raca-cor{
+    height:710px;
+  }
+  .raca-cor{
+    height:680px;
+  }
+  .mun-atr{
+    height: 640px;
+  }
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  iframe {
+    width: 90%;    
+  }
+  .dif-micro{
+    height: 250px;
+  }
+  .reg-dup{
+    height: 250px;
+  }
+  .raca-cor, .mun-atr{
+    height:680px;
+  }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  iframe {
+    width: 80%;    
+  }
+  .dif-micro{
+    height: 250px;
+  }
+  .reg-dup{
+    height: 250px;
+  }
+  .raca-cor, .mun-atr{
+    height:710px;
+  }
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  iframe {
+    width: 50%;   
+  }
+  .dif-micro{
+    height: 250px;
+  }
+  .reg-dup{
+    height: 250px;
+  }
+  .raca-cor, .mun-atr{
+    height:710px;
+  }
+ }
+
+/* // Extra large devices (large desktops, 1200px and up) 
+@media (min-width: 1200px) {  }
+*/
+
+</style>
 
 
 
 
 
+        <!-- <div class="flourish-embed flourish-cards" data-src="visualisation/5963255"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp;
+        <div class="flourish-embed flourish-cards" data-src="visualisation/5964078"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp;
+       
+        <div class="flourish-embed flourish-parliament" data-src="visualisation/5963470"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp;
+        <div class="flourish-embed flourish-chart" data-src="visualisation/5963048"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp;
+        
+        <div class="flourish-embed flourish-cards" data-src="visualisation/5964444"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp;
+        <div class="flourish-embed flourish-chart" data-src="visualisation/5964492"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp;
+        
+        <div class="flourish-embed flourish-parliament" data-src="visualisation/5963358"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+        &nbsp; -->
