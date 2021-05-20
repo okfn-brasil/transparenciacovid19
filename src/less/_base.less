@@ -1700,6 +1700,42 @@
 				}
 			}
 
+			// Parceiros - Monitos da Vacinação //
+			#parceiros-vacina{
+				.bgvd;
+				.wrap{
+					.pt5;
+					.pb5;
+					.relative;
+					>*{
+						.z2;
+						.relative;
+					}
+				}
+				@media only screen and (min-width: 48em) {
+					.wrap{
+						&:after{
+							content: "";
+							.absolute;
+							width: 60%;
+							.ht100;
+							left: 40%;
+							top: 0px;							
+							background-size: contain;
+							.z1;
+						}
+					}
+				}
+				@media only screen and (min-width: 62em) {
+					.wrap{
+						&:after{
+							width: 35%;
+							left: 67%;
+						}
+					}
+				}
+			}
+
 	// Página Secundaria //
 		.pagina-secundaria{
 			.bgp;
