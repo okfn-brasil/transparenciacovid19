@@ -3,14 +3,189 @@
 <article id="itc-3">
   <div class="container-fluid wrap mt2 mb2">
     <section class="row">
-      <div class="col-xs-12">
+      <!-- <div class="col-xs-12">
         <h3 class="t7 tcp w300 mb2"><strong>A terceira fase</strong> do Índice de Transparência da Covid-19 está chegando!</h3>
       </div>
       <div class="col-xs-12 col-sm-10">
         <p class="t3 w400 lh1-50">Em junho, a Open Knowledge Brasil inicia a terceira fase do Índice de Transparência da Covid-19 (ITC-19). Depois de avaliar a abertura de dados epidemiológicos e de infraestrutura de saúde de abril a dezembro de 2020 — primeiro em estados e governo federal e, a partir de julho, nas capitais — o ITC-19 vai incorporar também os dados da vacinação.</p>
         <p class="t3 w400 lh1-50">Todos os <a href="/boletins" class="underline tcrs">boletins das avaliações anteriores</a> seguem disponíveis, assim como os rankings e mapas de cada edição (acesse as versões <a class="underline tcrs" href="/v1">1.0</a> e <a class="underline tcrs" href="/v2">2.0</a>).</p>
         <p class="t3 w400 lh1-50">Fique de olho!</p>
-      </div>
+      </div> -->
+
+
+       <!-- Índice de transparência da Covid-19 -->
+       <div class="row">
+        <section class="col-xs-12 mt2 mb2">
+            <h3 class="t7 tcp w300"><strong>Índice de transparência</strong> da Covid-19 3.0</h3>
+
+            <!-- Próxima Avaliação-->
+            <!-- <p class="t2 uc tcc w400 mb2 ff2">Faremos uma pausa nas avaliações regulares para analisar os próximos passos. Voltamos em breve! <span class="proxavaliacao"></span></p> -->
+
+        </section>
+
+        <section class="col-xs-12">
+          <!-- Switch Estado / Capital-->
+          <div class="switch grande">
+              <label>
+                  <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
+                  <p><span>Estados</span></p>
+              </label>
+              <label>
+                  <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
+                  <p><span>Capitais</span></p>
+              </label>
+          </div>
+        </section>
+
+        <!-- Lista de Avaliações -->
+        <section class="col-xs-12">
+            <div class="lista-avaliacoes"></div>
+        </section>
+    </div>
+
+    <div class="row mt2">
+
+        <!-- Mapa -->
+        <section class="col-xs-12 col-md-6">
+            <h4 class="t4 tcp w600 ff1" id="titulo-estados">Avaliação por estado da federação</h4>
+            <h4 class="t4 tcp w600 ff1" id="titulo-capitais" style="display: none;">Avaliação por capital da federação</h4>
+
+            <div class="grafico-mapa">
+                <!-- SVG -->
+                <svg class="mapa" viewBox="0 0 475 488.2"></svg>
+
+                <p class="t2 uc tcc w400 ff3 mt2">Níveis de transparência</p>
+                <ul class="legenda">
+                    <li data-nivel="opaco">
+                        <span class="nivel opaco"></span>
+                        <p>0-19 PTS</p>
+                    </li>
+                    <li data-nivel="baixo">
+                        <span class="nivel baixo"></span>
+                        <p>20-39 PTS</p>
+                    </li>
+                    <li data-nivel="medio">
+                        <span class="nivel medio"></span>
+                        <p>40-59 PTS</p>
+                    </li>
+                    <li data-nivel="bom">
+                        <span class="nivel bom"></span>
+                        <p>60-79 PTS</p>
+                    </li>
+                    <li data-nivel="alto">
+                        <span class="nivel alto"></span>
+                        <p>80-100 PTS</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="col-xs-12 col-md-6 mt3 mt0-md">
+            <div class="row mb2">
+                <div class="col-xs-12 flex between-xs">
+                    <h4 class="t4 tcp w600 ff1">Ranking</h4>
+                    <div class="switch">
+                        <label>
+                            <input type="radio" name="ranking" value="tabela" checked>
+                            <p><span>Tabela</span></p>
+                        </label>
+                        <label>
+                            <input type="radio" name="ranking" value="grafico">
+                            <p><span>Gráfico</span></p>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="tabela-wrap">
+                        <table class="tabela">
+                            <thead>
+                                <tr>
+                                    <th>Estado</th>
+                                    <th>Pontuação</th>
+                                    <th>Variação</th>
+                                    <th>Nível</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="grafico-wrap">
+                        <table class="grafico-barra">
+                            <thead>
+                                <tr>
+                                    <th>Estado</th>
+                                    <th>Opaco</th>
+                                    <th>Baixo</th>
+                                    <th>Médio</th>
+                                    <th>Bom</th>
+                                    <th>Alto</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
     </section>
   </div>
 </article>
+
+
+
+
+        <!-- Sobre o índice -->
+        <article id="sobre">
+            <img class="anm" data-speed-x="1" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-blur.png">
+            <img class="anm" data-speed-x="-4" data-speed-y="4" data-speed-scale="2" data-speed-rotate="3" src="./assets/images/corona-blur.png">
+            <div class="container-fluid wrap">
+                <div class="row">
+                    <div class="col-xs-12 col-md-7 relative z2">
+                        <h3 class="t6 w700 mb1 tcb">Sobre o Índice 3.0</h3>
+                        <p class="t3 tcb ff1 w400 lh1-50">O Índice de Transparência da Covid-19 é uma iniciativa da Open Knowledge Brasil (OKBR) para avaliar a qualidade dos dados e informações relativos à pandemia do novo coronavírus que têm sido publicados em portais oficiais pela União, pelos estados brasileiros e pelas suas capitais. Para superarmos este momento tão desafiador para gestores públicos e população, acreditamos que nenhuma ferramenta é mais poderosa que a colaboração, e a informação é parte fundamental desse processo.</p>
+                        <!-- <a href="./sobre.html" class="btn-txt">Ler mais</a> -->
+                        <a href="/files/Nota_Metodologica_Transparencia_da_Covid-19_3.0.pdf" target="_blank" rel="noreferrer" class="btn-txt">NOTA METODOLÓGICA 3.0</a>
+                        <br/>
+                        <a href="" target="_blank" class="btn-txt">BASE DE DADOS 3.0 - ESTADOS</a>
+                        <br/>
+                        <!-- <a href="https://docs.google.com/spreadsheets/d/1nX-jt-dgQ1Q5Ke9zXr-dQxC9lAxQy0Zac8WHCyb3zKc/edit?usp=sharing" target="_blank" class="btn-txt">BASE DE DADOS 2.0 - CAPITAIS</a> -->
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <figure class="corona">
+                            <img src="./assets/images/corona.png">
+                            <img class="anm" data-speed-x="-0.5" data-speed-y="1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-magenta.png">
+                            <img class="anm" data-speed-x="2" data-speed-y="-1" data-speed-scale="1" data-speed-rotate="1" src="./assets/images/corona-verde.png">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+</body>
+    <script>
+        function hideEstados() {
+            var e = document.getElementById("titulo-estados");
+            var f = document.getElementById("titulo-capitais");
+            e.style.display = 'none';
+            f.style.display = 'inline'
+        }
+
+        function hideCapitais() {
+            var e = document.getElementById("titulo-capitais");
+            var f = document.getElementById("titulo-estados");
+            e.style.display = 'none';
+            f.style.display = 'inline'
+        }
+</script>
+    <script>
+        proxAvaliacaoEstados = "";
+        proxAvaliacaoCapitais = "";
+    </script>
+    <script src="./build/script.js"></script>
+</html>
