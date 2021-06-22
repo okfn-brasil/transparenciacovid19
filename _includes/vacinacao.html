@@ -153,6 +153,7 @@
       var m = document.getElementById("microdados-vacina");
       e.style.display = 'none';
       m.style.display = 'inline'
+      document.querySelector('#microdados-vacina').scrollIntoView();
   }
 
   function hideMicrodados() {
@@ -160,14 +161,15 @@
       var e = document.getElementById("explore-municipio");
       m.style.display = 'none';
       e.style.display = 'inline'
+      document.querySelector('#explore-municipio').scrollIntoView();
   }
 </script>
 
 <style>
 /* // Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 409px) { 
+@media (max-width: 409px) {
   iframe {
-    width: 100%;    
+    width: 100%;
     padding:0;
   }
   .dif-micro{
