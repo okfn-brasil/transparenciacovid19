@@ -16,14 +16,14 @@
           
           <div class="switch grande">
               <label>
-                  <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
+                  <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();" checked>
+                  <p><span>Capitais</span></p>
+              </label>
+              <label>
+                  <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();">
                   <p><span>Estados</span></p>
               </label>
 
-              <label>
-                  <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
-                  <p><span>Capitais</span></p>
-              </label>
               
           </div>
         </section>
@@ -156,6 +156,12 @@
 
 </body>
     <script>
+        function hideCapitais() {
+            var e = document.getElementById("titulo-capitais");
+            var f = document.getElementById("titulo-estados");
+            e.style.display = 'none';
+            f.style.display = 'inline'
+        }
         function hideEstados() {
             var e = document.getElementById("titulo-estados");
             var f = document.getElementById("titulo-capitais");
@@ -163,12 +169,6 @@
             f.style.display = 'inline'
         }
 
-        function hideCapitais() {
-            var e = document.getElementById("titulo-capitais");
-            var f = document.getElementById("titulo-estados");
-            e.style.display = 'none';
-            f.style.display = 'inline'
-        }
 </script>
     <script>
         proxAvaliacaoEstados = "";
