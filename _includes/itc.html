@@ -15,15 +15,15 @@
           Switch Estado / Capital
           
           <div class="switch grande">
-            <label>
-                <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
-                <p><span>Capitais</span></p>
-            </label>
+              <label>
+                  <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
+                  <p><span>Estados</span></p>
+              </label>
 
-            <label>
-                <input type="radio" name="instancia" value="estados" onChange="mudarInstancia($(this).val()); hideCapitais();" checked>
-                <p><span>Estados</span></p>
-            </label>
+              <label>
+                  <input type="radio" name="instancia" value="capitais" onChange="mudarInstancia($(this).val()); hideEstados();">
+                  <p><span>Capitais</span></p>
+              </label>
               
           </div>
         </section>

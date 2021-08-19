@@ -186,7 +186,7 @@ var app = {
   dados: false,
   avaliacao: 1,
   posicoes: [],
-  instancia: "capitais",
+  instancia: "estados",
   carregar: function() {
     $.getJSON('./assets/base/' + app.instancia + '.json', function(data) {
       app.dados = data;
