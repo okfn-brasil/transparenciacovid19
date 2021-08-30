@@ -24,7 +24,7 @@ gulp.task('default', gulp.series(function(done) {
       .pipe(gulp.dest(themePath + '/build'));
   });
   gulp.watch(themePath + '/src/scripts/**/*.js').on('change', function(path, stats) {
-    gulp.src(['./node_modules/jquery/dist/jquery.js', themePath + '/src/scripts/plugins/*.js', themePath + '/src/scripts/*.js'])
+    gulp.src(['./node_modules/jquery/dist/jquery.js', themePath + '/src/scripts/plugins/*.js', themePath + '/src/scripts/**/*.js'])
       .pipe(concat('script.js'))
       .pipe(uglify())
       .pipe(gulp.dest(themePath + '/build'));
