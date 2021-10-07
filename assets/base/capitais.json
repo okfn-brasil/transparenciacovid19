@@ -1,228 +1,228 @@
 { 
-  "1":{
-    "dia":22,
-    "mes":7,
-    "ano":2021,
-    "periodo":"22jul - 06out",
+    "1":{
+      "dia":22,
+      "mes":7,
+      "ano":2021,
+      "periodo":"22jul - 06out",
 
-    "capitais":{
-      "se": {
-        "pontuacao": 43,
-        "variacao": 0
-      },
-      "pa": {
-        "pontuacao": 19,
-        "variacao": 0
-      },
-      "mg": {
-        "pontuacao": 46,
-        "variacao": 0
-      },
-      "rr": {
-        "pontuacao": 13,
-        "variacao": 0
-      },
-      "ms": {
-        "pontuacao": 19,
-        "variacao": 0
-      },
-      "mt": {
-        "pontuacao": 34,
-        "variacao": 0
-      },
-      "pr": {
-        "pontuacao": 58,
-        "variacao": 0
-      },
-      "sc": {
-        "pontuacao": 63,
-        "variacao": 0
-      },
-      "ce": {
-        "pontuacao": 72,
-        "variacao": 0
-      },
-      "go": {
-        "pontuacao": 31,
-        "variacao": 0
-      },
-      "pb": {
-        "pontuacao": 95,
-        "variacao": 0
-      },
-      "ap": {
-        "pontuacao": 45,
-        "variacao": 0
-      },
-      "al": {
-        "pontuacao": 44,
-        "variacao": 0
-      },
-      "am": {
-        "pontuacao": 81,
-        "variacao": 0
-      },
-      "rn": {
-        "pontuacao": 56,
-        "variacao": 0
-      },
-      "to": {
-        "pontuacao": 52,
-        "variacao": 0
-      },
-      "rs": {
-        "pontuacao": 70,
-        "variacao": 0
-      },
-      "ro": {
-        "pontuacao": 34,
-        "variacao": 0
-      },
-      "pe": {
-        "pontuacao": 78,
-        "variacao": 0
-      },
-      "ac": {
-        "pontuacao": 29,
-        "variacao": 0
-      },
-      "rj": {
-        "pontuacao": 72,
-        "variacao": 0
-      },
-      "ba": {
-        "pontuacao": 66,
-        "variacao": 0
-      },
-      "ma": {
-        "pontuacao": 32,
-        "variacao": 0
-      },
-      "sp": {
-        "pontuacao": 51,
-        "variacao": 0
-      },
-      "pi": {
-        "pontuacao": 29,
-        "variacao": 0
-      },
-      "es": {
-        "pontuacao": 81,
-        "variacao": 0
+      "capitais":{
+        "se": {
+          "pontuacao": 43,
+          "variacao": 0
+        },
+        "pa": {
+          "pontuacao": 19,
+          "variacao": 0
+        },
+        "mg": {
+          "pontuacao": 46,
+          "variacao": 0
+        },
+        "rr": {
+          "pontuacao": 13,
+          "variacao": 0
+        },
+        "ms": {
+          "pontuacao": 19,
+          "variacao": 0
+        },
+        "mt": {
+          "pontuacao": 34,
+          "variacao": 0
+        },
+        "pr": {
+          "pontuacao": 58,
+          "variacao": 0
+        },
+        "sc": {
+          "pontuacao": 63,
+          "variacao": 0
+        },
+        "ce": {
+          "pontuacao": 72,
+          "variacao": 0
+        },
+        "go": {
+          "pontuacao": 31,
+          "variacao": 0
+        },
+        "pb": {
+          "pontuacao": 95,
+          "variacao": 0
+        },
+        "ap": {
+          "pontuacao": 45,
+          "variacao": 0
+        },
+        "al": {
+          "pontuacao": 44,
+          "variacao": 0
+        },
+        "am": {
+          "pontuacao": 81,
+          "variacao": 0
+        },
+        "rn": {
+          "pontuacao": 56,
+          "variacao": 0
+        },
+        "to": {
+          "pontuacao": 52,
+          "variacao": 0
+        },
+        "rs": {
+          "pontuacao": 70,
+          "variacao": 0
+        },
+        "ro": {
+          "pontuacao": 34,
+          "variacao": 0
+        },
+        "pe": {
+          "pontuacao": 78,
+          "variacao": 0
+        },
+        "ac": {
+          "pontuacao": 29,
+          "variacao": 0
+        },
+        "rj": {
+          "pontuacao": 72,
+          "variacao": 0
+        },
+        "ba": {
+          "pontuacao": 66,
+          "variacao": 0
+        },
+        "ma": {
+          "pontuacao": 32,
+          "variacao": 0
+        },
+        "sp": {
+          "pontuacao": 51,
+          "variacao": 0
+        },
+        "pi": {
+          "pontuacao": 29,
+          "variacao": 0
+        },
+        "es": {
+          "pontuacao": 81,
+          "variacao": 0
+      }
+    }
+  },
+    "2":{
+      "dia":07,
+      "mes":10,
+      "ano":2021,
+      "periodo":"07out - 11nov",
+
+      "capitais":{
+        "se": {
+          "pontuacao": 53,
+          "variacao": 10
+        },
+        "pa": {
+          "pontuacao": 29,
+          "variacao": 10
+        },
+        "mg": {
+          "pontuacao": 44,
+          "variacao": -2
+        },
+        "rr": {
+          "pontuacao": 38,
+          "variacao": 25
+        },
+        "ms": {
+          "pontuacao": 53,
+          "variacao": 34
+        },
+        "mt": {
+          "pontuacao": 34,
+          "variacao": 0
+        },
+        "pr": {
+          "pontuacao": 59,
+          "variacao": 1
+        },
+        "sc": {
+          "pontuacao": 63,
+          "variacao": 0
+        },
+        "ce": {
+          "pontuacao": 66,
+          "variacao": -6
+        },
+        "go": {
+          "pontuacao": 33,
+          "variacao": 2
+        },
+        "pb": {
+          "pontuacao": 97,
+          "variacao": 2
+        },
+        "ap": {
+          "pontuacao": 29,
+          "variacao": -16
+        },
+        "al": {
+          "pontuacao": 74,
+          "variacao": 30
+        },
+        "am": {
+          "pontuacao": 91,
+          "variacao": 10
+        },
+        "rn": {
+          "pontuacao": 69,
+          "variacao": 13
+        },
+        "to": {
+          "pontuacao": 45,
+          "variacao": -7
+        },
+        "rs": {
+          "pontuacao": 66,
+          "variacao": -4
+        },
+        "ro": {
+          "pontuacao": 31,
+          "variacao": -3
+        },
+        "pe": {
+          "pontuacao": 94,
+          "variacao": 16
+        },
+        "ac": {
+          "pontuacao": 21,
+          "variacao": -8
+        },
+        "rj": {
+          "pontuacao": 74,
+          "variacao": 2
+        },
+        "ba": {
+          "pontuacao": 67,
+          "variacao": 1
+        },
+        "ma": {
+          "pontuacao": 10,
+          "variacao": -22
+        },
+        "sp": {
+          "pontuacao": 67,
+          "variacao": 16
+        },
+        "pi": {
+          "pontuacao": 29,
+          "variacao": 0
+        },
+        "es": {
+          "pontuacao": 89,
+          "variacao": 8
+      }
     }
   }
-},
-  "2":{
-    "dia":7,
-    "mes":10,
-    "ano":2021,
-    "periodo":"07out - 11nov",
-
-    "capitais":{
-      "se": {
-        "pontuacao": 53,
-        "variacao": 10
-      },
-      "pa": {
-        "pontuacao": 29,
-        "variacao": 10
-      },
-      "mg": {
-        "pontuacao": 44,
-        "variacao": -2
-      },
-      "rr": {
-        "pontuacao": 38,
-        "variacao": 25
-      },
-      "ms": {
-        "pontuacao": 53,
-        "variacao": 34
-      },
-      "mt": {
-        "pontuacao": 34,
-        "variacao": 0
-      },
-      "pr": {
-        "pontuacao": 59,
-        "variacao": 1
-      },
-      "sc": {
-        "pontuacao": 63,
-        "variacao": 0
-      },
-      "ce": {
-        "pontuacao": 66,
-        "variacao": -6
-      },
-      "go": {
-        "pontuacao": 33,
-        "variacao": 2
-      },
-      "pb": {
-        "pontuacao": 97,
-        "variacao": 2
-      },
-      "ap": {
-        "pontuacao": 29,
-        "variacao": -16
-      },
-      "al": {
-        "pontuacao": 74,
-        "variacao": 30
-      },
-      "am": {
-        "pontuacao": 91,
-        "variacao": 10
-      },
-      "rn": {
-        "pontuacao": 69,
-        "variacao": 13
-      },
-      "to": {
-        "pontuacao": 45,
-        "variacao": -7
-      },
-      "rs": {
-        "pontuacao": 66,
-        "variacao": -4
-      },
-      "ro": {
-        "pontuacao": 31,
-        "variacao": -3
-      },
-      "pe": {
-        "pontuacao": 94,
-        "variacao": 16
-      },
-      "ac": {
-        "pontuacao": 21,
-        "variacao": -8
-      },
-      "rj": {
-        "pontuacao": 74,
-        "variacao": 2
-      },
-      "ba": {
-        "pontuacao": 67,
-        "variacao": 1
-      },
-      "ma": {
-        "pontuacao": 10,
-        "variacao": -22
-      },
-      "sp": {
-        "pontuacao": 67,
-        "variacao": 16
-      },
-      "pi": {
-        "pontuacao": 29,
-        "variacao": 0
-      },
-      "es": {
-        "pontuacao": 89,
-        "variacao": 8
-    }
-  }
-}
 }
