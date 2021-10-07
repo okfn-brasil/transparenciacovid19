@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.2.0"
+gem "jekyll", "~> 4.2.1"
+gem "http_parser.rb", "~> 0.7.0"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
